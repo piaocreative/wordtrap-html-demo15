@@ -1,0 +1,60 @@
+/*-----------------------------------------------------------------------------------
+	utilities.scss
+-----------------------------------------------------------------------------------*/
+
+
+//-------------------- Fonts --------------------//
+
+// Font Family
+.heading-font { font-family: $heading-font !important; }
+.body-font { font-family: $body-font !important; }
+.third-font { font-family: $third-font !important; }
+
+// Font Weight
+.fw-semi-light { font-weight: 350; }
+.fw-semi-bold { font-weight: 600; }
+
+// Text Color
+.text-black { color: #000 ; }
+.theme-color { color: $theme-color; }
+.body-color { color: $body-color; }
+.bg-theme-color { background-color: $theme-color !important; }
+
+//background-color
+.bg-grey { background-color: #f3f5f4; }
+//-------------------- Image --------------------//
+
+img {
+	&.img-full {
+		width: 100%;
+	}
+}
+
+
+//-------------------- Section ------------------//
+
+.section {
+	position: relative;
+	padding-top: $section-spacer;
+	padding-bottom: $section-spacer;
+}
+
+.section-padding-top {
+	padding-top: $section-spacer;
+}
+
+.section-padding-bottom {
+	padding-bottom: $section-spacer;
+}
+
+.section-margin-top {
+	margin-top: $section-spacer;
+}
+
+.section-margin-bottom {
+	margin-bottom: $section-spacer;
+}
+
+button:focus {
+	box-shadow: 0 0 0 0 !important;
+}

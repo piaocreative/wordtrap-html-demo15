@@ -1,0 +1,202 @@
+
+/* ----------------------------------------------------------------
+
+	extras.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Extra Styles
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here extra styles for demo. Thanks!
+-----------------------------------------------------------------*/
+
+//-------------------- Arrow Link --------------------//
+
+
+// contact
+
+.contact {
+	h5 {
+		letter-spacing: 2px;
+	}
+
+	.contact-title {
+		display: block;		
+		font-family: $heading-font;
+		font-size: 5rem;
+		font-weight: 900;		
+		line-height: 4rem;
+		margin-bottom: $spacer * 1.5;
+	}
+}
+
+.contact-icons {
+	&.dark-contact a {
+		color: white;
+		font-size: 0.7rem;
+	}
+
+	&.light-contact a {
+		color: white;
+		font-size: 0.875rem;
+	}
+
+	li {
+		font-family: $body-font;
+		line-height: 2rem;
+
+		a {
+			color: white;
+
+			&:hover {
+				color: $primary;
+			}
+
+			span {
+				display: inline-block;
+				color: white;
+				margin-right: $spacer * 1.5;
+				font-size: 1.2rem;
+				width: 1.8rem;
+				text-align: center;
+			}
+		}
+	}
+}
+
+.contact-form {
+	padding-top: 4rem;
+	padding-left: $spacer * 3;
+	padding-right: $spacer * 3;
+	padding-bottom: 4rem;
+}
+
+.icon {
+	margin-left: $spacer / 2;
+}
+
+// gallery
+.gallery {
+	margin: 0 -$spacer / 2;
+}
+
+.gallery-1 {
+	width: 19%;
+}
+
+.gallery-2 {
+	width:27%;
+}
+
+.gallery-3 {
+	width: 35%;
+}
+
+.gallery-4 {
+	width: 19%;
+}
+
+.gallery-5 {
+	width: 100%;
+}
+
+.feedback-bg {
+	background-size: cover;
+	position: relative;
+	background-image: url(../images/newletter_bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 20rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 32rem;
+
+	@include media-breakpoint-down(lg) {
+		min-height: 15rem;
+	}
+
+	.feedback {
+		@include media-breakpoint-up(lg) {
+			width: 20%;
+		}
+		h5 {
+			letter-spacing: 2px;
+		}
+
+		h2 {
+			letter-spacing: 3px;
+		}
+
+		.btn {
+			border-color: white;
+			width: 100%;
+			border-width: 1px !important;
+		}
+
+		.form-control {
+			color: #979797;
+		}
+	}
+}
+
+
+#social-link {
+	position: absolute;
+	left: -8rem;
+	top: 20rem;
+	transform: rotate(-90deg);
+	z-index: 100;
+	@include media-breakpoint-down(lg) {
+		top: 12rem;
+	}
+	
+	ul {
+		display: flex;
+		list-style: none;
+
+		li {
+			color: $heading-color;
+			font-size: 1rem;
+			padding: 0 1.6rem;
+
+			@include media-breakpoint-down(lg) {
+				padding: 0 0.6rem;
+			}
+			a:hover {
+				color: #acacac;
+			}
+		}
+	}
+}
+
+.input-group-text {
+	padding-right: 0.3rem;
+}
+
+// button
+.btn {
+	padding-left: 4rem;
+	padding-right: 4rem;
+	border-width: 2px!important;
+	z-index: 1000;
+}
+
+.ms-n7 {
+	margin-left: -7rem;
+}
+
+.mt-n5 {
+	margin-top: -2rem;
+}
+
+.history-title {
+	font-size: 5.625rem;
+	color: #dbdbdb;
+	margin-bottom: 2.5rem;
+}

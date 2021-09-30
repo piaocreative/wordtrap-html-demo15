@@ -1,0 +1,36 @@
+
+/*-----------------------------------------------------------------------------------
+
+	Form: form.scss
+
+-----------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Form Styles
+-----------------------------------------------------------------*/
+
+// Textarea
+textarea {
+    resize: none;
+}
+
+// Required field
+.required-field {
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        right: 1.375rem;
+        top: 0;
+        display: block;
+        width: 0.5rem;
+        height: 0.6875rem;
+        background-image: url(../images/clip-icon.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        z-index: 1000;
+    }
+}
+
+

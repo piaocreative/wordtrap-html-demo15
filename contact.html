@@ -1,0 +1,509 @@
+<!doctype html>
+<html dir="ltr" lang="en-US">
+<head>
+
+  <!-- Meat Tags
+  ============================================= -->
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="JohnPiao" />
+
+  <!-- Fonts
+  ============================================= -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">    
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Fontawesome
+  ============================================= -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" type="text/css" />
+
+  <!-- Stylesheets
+  ============================================= -->
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+  <!-- Document Title
+  ============================================= -->
+  <title>Demo15 | Saler</title>
+</head>
+<body id="demo15">
+
+  <!-- Document Wrapper
+  ============================================= -->
+  <div id="wrapper" class="clearfix">
+
+    <!-- Header
+    ============================================= -->
+    <header id="header" class="transparent-header">
+      
+      <div id="header-wrap">
+
+        <nav class="navbar navbar-light">
+          <div class="container-fluid px-0">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Top Links
+            ============================================= -->
+            <div id="top-links" class="me-auto d-lg-block d-none">
+              <ul>
+                <li><a href="#">USD<i class="fas fa-chevron-down"></i></a>
+                  <ul>
+                    <li><a href="#">EUR</a></li>
+                    <li><a href="#">AUD</a></li>
+                    <li><a href="#">GBP</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">ENG<i class="fas fa-chevron-down"></i></a>
+                  <ul>
+                    <li><a href="#"><img src="images/icons/flags/french.png" alt="French"> FR</a></li>
+                    <li><a href="#"><img src="images/icons/flags/italian.png" alt="Italian"> IT</a></li>
+                    <li><a href="#"><img src="images/icons/flags/german.png" alt="German"> DE</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div><!-- .top-links -->
+
+            <!-- Logo
+            ============================================= -->
+            <a href="Index.html" class="navbar-brand me-md-auto " data-dark-logo="images/logo.png">
+              <img src="images/logo.png" alt="Saler Logo">
+            </a><!-- #logo -->
+
+            <!-- Top Buttons
+            ============================================= -->
+            <div id="top-btns" class="d-lg-block d-none" >
+              
+              <ul>
+                <li>
+                  <a href="#"><i class="far fa-heart"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="far fa-user-circle"></i></a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span data-cart-items="2">
+                    <i class="fas fa-shopping-cart"></i></a>
+                </li>
+              </ul>
+
+            </div><!-- #top-btns -->
+
+            <div id="navbarCollapse" class="collapse navbar-collapse ">
+
+              <!-- Top Links
+              ============================================= -->
+              <div id="top-links-mobile" class="me-auto ms-3 d-lg-none d-block">
+                  <ul class="nav navbar-nav">
+                      <li class="nav-item dropdown">
+                          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
+                          <ul class="dropdown-menu">
+                              <li><a href="#" class="dropdown-item">EUR</a></li>
+                              <li><a href="#" class="dropdown-item">AUD</a></li>
+                              <li><a href="#" class="dropdown-item">GBP</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">ENG</a>
+                          <ul class="dropdown-menu">
+                              <li><a href="#" class="dropdown-item"><img src="images/icons/flags/french.png" alt="French"> FR</a></li>
+                              <li><a href="#" class="dropdown-item"><img src="images/icons/flags/italian.png" alt="Italian"> IT</a></li>
+                              <li><a href="#" class="dropdown-item"><img src="images/icons/flags/german.png" alt="German"> DE</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </div><!-- .top-links -->
+              
+              <!-- Primary Navigation
+              ============================================= -->
+              <nav id="primary-menu" class="me-auto">
+
+                <ul class="navbar-nav">
+                  <li class="current nav-item">
+                      <a href="#" class="nav-link">Home</a>
+                  </li>                                  
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">Accessories</a>
+                  </li>                                    
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">Blog</a>
+                  </li>
+              </ul>                              
+
+              </nav><!-- #primary-menu -->
+            
+                <!-- Top Buttons
+              ============================================= -->
+              <div id="top-btns" class="d-lg-none d-block">
+                
+                <ul class="navbar-nav flex-row">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"><i class="far fa-heart"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"><i class="far fa-user-circle"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <span data-cart-items="2">
+                        <i class="fas fa-shopping-cart"></i>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+
+              </div><!-- #top-btns -->
+            </div>  
+
+          </div>
+        </nav>
+          
+      </div>
+
+    </header><!-- Header -->
+
+    <!-- Content
+    ============================================= -->
+    <section id="content">
+
+      <div class="content-wrap">           
+        
+        <!-- Contact Us 
+        ============================================= -->
+        <div class="container">
+          
+          <div class="section py-0">
+            
+            <div class="row g-0">
+              
+              <div class="col-lg-5 offset-lg-1">
+                <div id="page-title">
+                  <h5 class="sub-title fw-bold theme-color">CONTACT US</h5>
+                  <h1 class="title">Contact <span class="fw-normal">Us</span></h1>
+                </div>
+
+                <h5 class="text-uppercase fw-semi-bold lh-sm body-font mb-4">Our Office</h5>
+
+                <ul>
+                  <li>
+                    <a href="#" target="_blank" title="Location"> 
+                      <div class="icon-box">
+                        <div class="icon-wrapper">
+                          <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="icon-header">
+                          <h4 class="body-font text-body">Address:</h4>
+                          <span class="fw-semi-light">1234 Street Name, City Name, USA</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                <li>
+                  <a href="callto:1234567890" target="_blank" title="Phone"s>
+                    <div class="icon-box">
+                      <div class="icon-wrapper">
+                        <i class="fa fa-phone"></i>
+                      </div>
+                      <div class="icon-header">
+                        <h4 class="body-font text-body">Phone:</h4>
+                        <span class="fw-semi-light">(123) 456-789</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:mail@example.com" target="_blank" title="Mail"><span class="contact-icon">
+                    <div class="icon-box">
+                      <div class="icon-wrapper">
+                        <i class="far fa-envelope"></i>
+                      </div>
+                      <div class="icon-header">
+                        <h4 class="body-font text-body">Email:</h4>
+                        <span class="fw-semi-light">mail@example.com</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                </ul>
+            
+                <h5 class="text-uppercase fw-semi-bold lh-sm body-font mb-4">Business Hours</h5>
+
+                <ul>
+                  <li><a href="#">
+                    <div class="icon-box">
+                    <div class="icon-wrapper">
+                      <i class="far fa-clock"></i>
+                    </div>
+                    <div class="icon-header">
+                      <h4 class="body-font text-body">Monday - Friday</h4>
+                      <span class="fw-semi-light">9am to 5pm</span>
+                    </div>
+                  </div></a></li>
+                  <li><a href="#">
+                    <div class="icon-box">
+                      <div class="icon-wrapper">
+                        <i class="far fa-clock"></i>
+                      </div>
+                      <div class="icon-header">
+                        <h4 class="body-font text-body">Saturday</h4>
+                        <span class="fw-semi-light">9am to 2pm</span>
+                      </div>
+                    </div>
+                  </a></li>
+                  <li><a href="#">
+                    <div class="icon-box">
+                      <div class="icon-wrapper">
+                        <i class="far fa-clock"></i>
+                      </div>
+                      <div class="icon-header">
+                        <h4 class="body-font text-body">Sunday</h4>
+                        <span class="fw-semi-light">Closed</span>
+                      </div>
+                    </div>
+
+                  </a></li>
+                </ul>
+
+              </div>
+
+              <div class="col-lg-4 offset-lg-1 col-md-10 bg-grey my-5 my-lg-0">
+                
+                <form class="contact-form" action="php/contact-form.php" method="POST" novalidate="novalidate">
+                
+                  <div class="mb-3">
+                    <label class="form-label" for="contactFormName">Your Name</label>
+                    <div class="required-field input-group flex-nowrap">
+                      <span class="input-group-text rounded-pill rounded-end bg-white ps-2" id="basic-addon1"><img src="./images/icons/icon_user.png" alt="Icon Image" class="img-fluid icon"></span>
+                      <input type="text" value="" class="form-control rounded-pill rounded-start" name="name" id="contactFormName" required>
+                      
+                    </div>                                        
+                  </div>									
+                  <div class="mb-3">
+                    <label class="form-label" for="contactFormEmail">Your email address</label>
+                    <div class="required-field input-group">
+                      <span class="input-group-text rounded-pill rounded-end bg-white ps-2" id="basic-addon1">
+                        <img src="./images/icons/icon_email.png" alt="Icon Image" class="img-fluid icon">
+                      </span>
+                      <input type="email" value="" class="form-control rounded-pill rounded-start" name="email" id="contactFormEmail" required>
+                    </div>                                            
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="contactFormSubject">Subject</label>
+                    <div class="input-group">
+                      <span class="input-group-text rounded-pill rounded-end bg-white ps-2" id="basic-addon1">
+                        <img src="./images/icons/icon_subject.png" alt="Icon Image" class="img-fluid icon">
+                      </span>  
+                      <input type="text" value="" class="form-control rounded-pill rounded-start" name="subject" id="contactFormSubject" required>
+                    </div>                                        
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="contactFormMsg">Message</label>
+                    <div class="input-group">
+                      <span class="input-group-text align-items-start rounded-3 rounded-end bg-white ps-2" id="basic-addon1">
+                        <img src="./images/icons/icon_message.png" alt="Icon Image" class="img-fluid icon">
+
+                      </span>
+                      <textarea maxlength="5000" rows="8" class="form-control rounded-3" name="message" id="contactFormMsg" required></textarea>
+                    </div>                                            
+                  </div>
+                  <div class="mb-3 pt-2">
+                    <input type="submit" value="Send" class="btn rounded-pill btn-primary text-uppercase" data-loading-text="Loading...">
+                  </div>
+                </form>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Map
+        ============================================= -->
+        <div id="map">
+          <img src="images/map.png" alt="map" class="img-fluid">
+        </div>
+
+      </div>
+
+    </section><!-- #content -->
+
+    <!-- Footer
+    ============================================= -->
+    <footer>
+
+      <!-- Footer top
+      ============================================= -->
+      <section class="footer-top">
+        <div class="container">
+          <div class="row service text-center">
+          
+              <div class="col-md-4">
+                <img src="images/feature_box/fbox_icon1.png" alt="Icon Image">
+                <h5 class="title"> Free Shipping on orders above 99$</h5>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+      
+              <div class="col-md-4 pt-5 pt-md-0">
+                <img src="images/feature_box/fbox_icon2.png" alt="Icon Image">
+                <h5 class="title">Gifts for regular customers</h5>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+              
+              <div class="col-md-4 pt-5 pt-md-0">
+                <img src="images/feature_box/fbox_icon3.png" alt="Icon Image">
+                <h5 class="title">100% money back guarantee</h5>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+
+          </div>
+        </div>
+      </section>
+
+      <div class="footer-main">
+
+        <div class="container">
+
+          <div class="row justify-content-center">
+
+            <div class="col-lg-4 col-md-6 col-10">
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit, sed do
+              eiusmod tempor incididunt ut labore et <br> dolore magna aliqua. 
+              </p>
+              <ul class="contact-icons text-white list-group">
+                <li><a href="#" target="_blank" title="address"><span><i class="fas fa-map-marker-alt"></i></span>New York 5686 Edverano Center</a></li>
+                <li><a href="mailto:info@gmail.com" target="_blank" title="email"><span><i class="far fa-envelope"></i></span>info@gmail.com</a></li>
+                <li><a href="callto:1234567890" target="_blank" title="phone"><span><i class="fas fa-phone-alt"></i></span><strong class="fs-4">123-456-7890</strong></a></li>
+              </ul>
+            </div>
+
+            <div class="row col-lg-4 col-md-6 col-10 widget mt-5 mt-md-0 ps-0">
+              <div class="col-sm-6">
+                <h5 class="text-uppercase text-white widget-title">customer</h5>
+          
+                <ul>
+                  <li><a href="#">How to make an order</a></li>
+                  
+                  <li><a href="#">Ways of payment</a></li>
+
+                  <li><a href="#">Delivery</a></li>
+
+                  <li><a href="#">Purcase return</a></li>
+
+                  <li><a href="#">Refunds</a></li>
+
+                  <li><a href="#">Sale rules</a></li>
+
+                  <li><a href="#">Terms of use of the trading platfom</a></li>
+
+                  <li><a href="#">Questions and anwsers</a></li>
+
+                </ul>
+              </div>
+              <div class="col-sm-6">
+                <div class="pt-sm-0 pt-4">
+                  <h5 class="text-uppercase text-white widget-title">for partners</h5>
+                  <ul>
+                    
+                    <li><a href="#">For sellers   </a></li>
+  
+                    <li><a href="#">For carriers</a></li>
+  
+                    <li><a href="#">Franchise</a></li>
+  
+                    <li><a href="#">Open the pick-up point</a></li>
+  
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-10 mt-5 mt-lg-0">
+
+              <div class="widget widget-subscribe mt-5 mt-md-0">
+                <h4 class="widget-title text-white text-uppercase">Subscribe to our the free newslettr</h4>
+                <div class="widget-content">
+                    <form id="widget-subscribe-form" action="#" method="post">
+                        <div class="input-group">
+                            <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control rounded-pill required email" placeholder="E-mail">
+                            <div class=" input-group-append">
+                                <button class="btn btn-primary rounded-pill text-uppercase sub-btn ms-n7 px-6 fixed-top position-relative " type="submit">Subscribe</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>                                    
+              </div>  
+              
+              <div class="widget widget-social text-end">
+                <h4 class="widget-title text-white text-uppercase">Follow Us</h4>
+                <div class="widget-content">
+                  <ul class="social-icons d-flex align-items-center justify-content-end">
+                    <li><a href="#" target="_blank" title="Facebook"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" target="_blank" title="Twitter"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" target="_blank" title="Linkedin"><i class="fab fa-telegram-plane"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+                
+            </div>      
+
+          </div>
+
+        </div>
+
+      </div><!-- #footer-main -->
+
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row col-sm-auto d-flex align-items-center justify-content-between position-relative py-3">
+            
+            <p id="copyrights" class="text-end mb-4 col-sm-auto mb-sm-0 d-flex justify-content-center">&copy; Copyrights2021 </p>
+            <div class="widget widget-payment col-sm-auto">
+              <div class="widget-content">
+                <div class="payments d-flex justify-content-center">
+                  <span class="payment-icon paypal"></span>
+                  <span class="payment-icon mastercard"></span>
+                  <span class="payment-icon visa"></span>
+                  <span class="payment-icon express"></span>
+                </div>                                    
+              </div>
+              
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </footer><!-- #footer -->
+
+  </div>
+
+  <!-- Go To Top
+  ============================================= -->
+  <div id="gotoTop" class="icon-angle-up"></div>
+
+
+  <!-- External JavaScripts
+  ============================================= -->
+  
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+  <!-- Footer Scripts
+  ============================================= -->
+  
+</body>
+</html>

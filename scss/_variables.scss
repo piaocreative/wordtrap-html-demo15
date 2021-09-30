@@ -1,0 +1,219 @@
+/* ----------------------------------------------------------------
+
+	variables.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for variables. Thanks!
+-----------------------------------------------------------------*/
+
+
+//-------------------- Base Colors --------------------//
+
+$theme-color:                   #875722;
+$body-color:                    #282828;
+$heading-color:                 #302f2d;
+
+
+//-------------------- Font Families --------------------//
+
+$heading-font:                  'Montserrat', sans-serif;
+$body-font:                     'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$third-font:                    'Monoton',sans-serif;
+
+
+//-------------------- Redefine Bootstrap Variables ------------//
+
+// Theme Colors
+$primary:                       $theme-color;
+$secondary:                     $heading-color;
+
+// Spacer
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer / 4,
+  2: $spacer / 2,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+) !default;
+
+// Link
+$link-color:                    $body-color;
+$link-decoration:				        none;
+$link-hover-color:				      $theme-color;
+
+// Border
+$border-radius:					        0.3125rem;
+
+// Font sizes
+$font-size-base:                0.875rem;
+
+$h1-font-size:                	3rem;
+$h2-font-size:                	1.875rem;
+$h3-font-size:                	1.25rem;
+$h4-font-size:                	1rem;
+$h5-font-size:                	$font-size-base;
+$h6-font-size:               	  0.75rem;
+
+// Line Height
+$line-height-base:            	30 / 14;
+$line-height-sm:              	30 / 16;
+$line-height-lg:              	30 / 12;
+$line-height-unit:              1;
+// Buttons
+$btn-padding-y:              	  1.125rem;
+$btn-padding-x:              	  1.875rem;
+$btn-font-size:              	  0.75rem;
+
+$btn-padding-y-lg:              1.5rem;
+$btn-padding-x-lg:              2.5rem;
+$btn-font-size-lg:              0.875rem;
+
+$btn-line-height:               1;
+
+
+// Forms
+$input-color:                   $heading-color;
+$input-border-color:            $theme-color;
+$input-border-width:			      0;
+$input-btn-focus-color-opacity: 1;
+
+$input-btn-padding-y:           1rem;
+$input-btn-padding-x:           1.5rem;
+$input-btn-font-size:           0.875rem;
+
+$input-btn-padding-y-lg:        1.5rem;
+$input-btn-padding-x-lg:        2.5rem;
+$input-btn-font-size-lg:        0.875rem;
+
+$input-btn-line-height:         1;
+
+$input-btn-focus-width:         1px;
+$input-focus-border-color:      $theme-color;
+
+
+//-------------------- Top Bar --------------------//
+
+$topbar-height:                 9.33rem;
+$topbar-line-height:            2.75rem;
+$topbar-color:                  #857e83;
+$topbar-hover-color:            $theme-color;
+
+
+//-------------------- Header --------------------//
+
+$header-height:                 3.09rem;
+
+// Sticky Header
+$sticky-header-height:          3.75rem;
+
+
+//-------------------- Primary Menu --------------------//
+
+$primary-menu-padding:					2.375rem;
+$sticky-menu-padding:					  1.40625rem;
+
+$primary-menu-font:             $body-font;
+$primary-menu-font-weight:      400;
+$primary-menu-font-size:        0.9375rem;
+$primary-menu-font-tt:          initial;
+$primary-menu-font-color:       $heading-color;
+$primary-menu-font-spacing:     0;
+
+// top Button
+$top-btn-font-size:        			1.5rem;
+$top-btn-font-color:       			#302f2d;
+
+
+//-------------------- Section --------------------//
+
+$section-spacer:						    8rem;
+
+
+//-------------------- Social Icons Colors --------------------//
+
+$facebook:                    #3B5998;
+$delicious:                   #205CC0;
+$paypal:                      #00588B;
+$flattr:                      #F67C1A;
+$android:                     #A4C639;
+$smashmag:                    #E53B2C;
+$gplus:                       #DD4B39;
+$wikipedia:                   #333333;
+$stumbleupon:                 #F74425;
+$foursquare:                  #25A0CA;
+$call:                        #444444;
+$ninetyninedesigns:           #F26739;
+$forrst:                      #5B9A68;
+$digg:                        #191919;
+$spotify:                     #81B71A;
+$reddit:                      #C6C6C6;
+$blogger:                     #FC4F08;
+$cc:                          #688527;
+$dribbble:                    #EA4C89;
+$evernote:                    #5BA525;
+$flickr:                      #FF0084;
+$google:                      #DD4B39;
+$instapaper:                  #333333;
+$klout:                       #FF5F52;
+$linkedin:                    #0E76A8;
+$vk:                          #2B587A;
+$rss:                         #EE802F;
+$skype:                       #00AFF0;
+$twitter:                     #00ACEE;
+$youtube:                     #C4302B;
+$vimeo:                       #86C9EF;
+$aim:                         #FCD20B;
+$yahoo:                       #720E9E;
+$email3:                      #6567A5;
+$macstore:                    #333333;
+$myspace:                     #666666;
+$podcast:                     #E4B21B;
+$cloudapp:                    #525557;
+$dropbox:                     #3D9AE8;
+$ebay:                        #89C507;
+$github:                      #171515;
+$googleplay:                  #DD4B39;
+$itunes:                      #222222;
+$plurk:                       #CF5A00;
+$pinboard:                    #0000E6;
+$soundcloud:                  #FF7700;
+$tumblr:                      #34526F;
+$wordpress:                   #1E8CBE;
+$yelp:                        #C41200;
+$intensedebate:               #009EE4;
+$eventbrite:                  #F16924;
+$scribd:                      #666666;
+$stripe:                      #008CDD;
+$print:                       #111111;
+$dwolla:                      #FF5C03;
+$statusnet:                   #131A30;
+$acrobat:                     #D3222A;
+$drupal:                      #27537A;
+$buffer:                      #333333;
+$pocket:                      #EE4056;
+$bitbucket:                   #0E4984;
+$stackoverflow:               #EF8236;
+$hackernews:                  #FF6600;
+$xing:                        #126567;
+$instagram:                   #3F729B;
+$quora:                       #A82400;
+$openid:                      #E16309;
+$steam:                       #111111;
+$amazon:                      #E47911;
+$disqus:                      #E4E7EE;
+$plancast:                    #222222;
+$appstore:                    #000000;
+$pinterest:                   #C8232C;
+$fivehundredpx:               #111111;
+$si_text_color:               #FFFFFF;
+
+//grid
+
+$grid-gutter-width : 1.875rem;
+
+$enable-reduced-motion:       false;
