@@ -12,16 +12,15 @@
 
 //-------------------- Base Colors --------------------//
 
-$theme-color:                   #875722;
-$body-color:                    #282828;
-$heading-color:                 #302f2d;
+$theme-color:                  #875722;
+$body-color:                   #282828;
+$heading-color:                #302f2d;
 
 
 //-------------------- Font Families --------------------//
 
 $heading-font:                  'Montserrat', sans-serif;
 $body-font:                     'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-$third-font:                    'Monoton',sans-serif;
 
 
 //-------------------- Redefine Bootstrap Variables ------------//
@@ -30,34 +29,21 @@ $third-font:                    'Monoton',sans-serif;
 $primary:                       $theme-color;
 $secondary:                     $heading-color;
 
-// Spacer
-$spacer: 1rem !default;
-$spacers: (
-  0: 0,
-  1: $spacer / 4,
-  2: $spacer / 2,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
-) !default;
-
 // Link
 $link-color:                    $body-color;
-$link-decoration:				        none;
-$link-hover-color:				      $theme-color;
+$link-decoration:				none;
+$link-hover-color:				$theme-color;
 
 // Border
-$border-radius:					        0.3125rem;
+$border-radius:					0.3125rem;
 
-// Font sizes
-$font-size-base:                0.875rem;
 
 $h1-font-size:                	3rem;
 $h2-font-size:                	1.875rem;
 $h3-font-size:                	1.25rem;
 $h4-font-size:                	1rem;
-$h5-font-size:                	$font-size-base;
-$h6-font-size:               	  0.75rem;
+$h5-font-size:                	0.875rem;
+$h6-font-size:               	0.75rem;
 
 // Line Height
 $line-height-base:            	30 / 14;
@@ -65,13 +51,14 @@ $line-height-sm:              	30 / 16;
 $line-height-lg:              	30 / 12;
 $line-height-unit:              1;
 // Buttons
-$btn-padding-y:              	  1.125rem;
-$btn-padding-x:              	  1.875rem;
-$btn-font-size:              	  0.75rem;
+$btn-padding-y:              	1.25rem;
+$btn-padding-x:              	4rem;
+$btn-font-size:              	0.75rem;
 
 $btn-padding-y-lg:              1.5rem;
-$btn-padding-x-lg:              2.5rem;
-$btn-font-size-lg:              0.875rem;
+$btn-padding-x-lg:              3rem;
+$btn-font-size-lg:              1rem;
+$btn-border-radius-lg:          3rem;
 
 $btn-line-height:               1;
 
@@ -79,7 +66,7 @@ $btn-line-height:               1;
 // Forms
 $input-color:                   $heading-color;
 $input-border-color:            $theme-color;
-$input-border-width:			      0;
+$input-border-width:			0;
 $input-btn-focus-color-opacity: 1;
 
 $input-btn-padding-y:           1rem;
@@ -100,7 +87,7 @@ $input-focus-border-color:      $theme-color;
 
 $topbar-height:                 9.33rem;
 $topbar-line-height:            2.75rem;
-$topbar-color:                  #857e83;
+$topbar-color:                #857e83;
 $topbar-hover-color:            $theme-color;
 
 
@@ -114,8 +101,8 @@ $sticky-header-height:          3.75rem;
 
 //-------------------- Primary Menu --------------------//
 
-$primary-menu-padding:					2.375rem;
-$sticky-menu-padding:					  1.40625rem;
+$primary-menu-padding:			2.375rem;
+$sticky-menu-padding:			1.40625rem;
 
 $primary-menu-font:             $body-font;
 $primary-menu-font-weight:      400;
@@ -125,13 +112,13 @@ $primary-menu-font-color:       $heading-color;
 $primary-menu-font-spacing:     0;
 
 // top Button
-$top-btn-font-size:        			1.5rem;
-$top-btn-font-color:       			#302f2d;
+$top-btn-font-size:        		1.5rem;
+$top-btn-font-color:       	  #302f2d;
 
 
 //-------------------- Section --------------------//
 
-$section-spacer:						    8rem;
+$section-spacer:				8rem;
 
 
 //-------------------- Social Icons Colors --------------------//

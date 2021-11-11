@@ -8,7 +8,6 @@
 // Font Family
 .heading-font { font-family: $heading-font !important; }
 .body-font { font-family: $body-font !important; }
-.third-font { font-family: $third-font !important; }
 
 // Font Weight
 .fw-semi-light { font-weight: 350; }
@@ -17,8 +16,6 @@
 // Text Color
 .text-black { color: #000 ; }
 .theme-color { color: $theme-color; }
-.body-color { color: $body-color; }
-.bg-theme-color { background-color: $theme-color !important; }
 
 //background-color
 .bg-grey { background-color: #f3f5f4; }
@@ -27,6 +24,8 @@
 img {
 	&.img-full {
 		width: 100%;
+		height: 100%;
+		object-fit: cover;
 	}
 }
 
@@ -37,24 +36,9 @@ img {
 	position: relative;
 	padding-top: $section-spacer;
 	padding-bottom: $section-spacer;
-}
 
-.section-padding-top {
-	padding-top: $section-spacer;
-}
-
-.section-padding-bottom {
-	padding-bottom: $section-spacer;
-}
-
-.section-margin-top {
-	margin-top: $section-spacer;
-}
-
-.section-margin-bottom {
-	margin-bottom: $section-spacer;
-}
-
-button:focus {
-	box-shadow: 0 0 0 0 !important;
+	@include media-breakpoint-down(lg) {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
 }

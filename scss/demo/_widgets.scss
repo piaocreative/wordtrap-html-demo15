@@ -17,28 +17,23 @@
 
 
 .widget {
-	right: 0;
+	margin-bottom: 1.875rem;
 
 	.widget-title {
 		font-size: $h5-font-size;
 		font-family: $heading-font;
 		font-weight: 600;
-		margin-bottom: 0.75rem;
+		margin-bottom: 1.5rem;
 	}	
 
 	// Widget - Social
 	&.widget-social {
-
 		.social-icons {
 			li {
-				padding: 0 $spacer / 4;
+				padding: 0.25rem;
 
-				&:last-child {
-					padding-right: 0;
-				}
-		
 				a {
-					background-color: $body-color;					
+					background-color: #282828;					
 					color: white;
 					display: inline-block;
 					line-height: 1.8125rem;
@@ -77,14 +72,14 @@
 	// Widget - Links
 	&.widget-links {
 		ul {
-			display: flex;
-			justify-content: space-between;
-
 			li {
 				a {
-					color: $white;
-					font-weight: 600;
+					color: #5c5c5c;
 					text-transform: uppercase;
+
+					&:hover {
+						color: $theme-color;
+					}
 				}
 			}
 		}
@@ -126,11 +121,29 @@
 			}
 		}
 	}
-}
 
+	&.widget-custom-html {
+		.widget-content {
+			p {
+				color: #5c5c5c;
+			}
 
-/* Widget - Products
------------------------------------------------------------------*/
-.widget {
+			a {
+				color: white;
 	
+				&:hover {
+					color: $theme-color;
+				}
+	
+				span {
+					display: inline-block;
+					color: white;
+					margin-right: $spacer * 1.5;
+					font-size: 1.2rem;
+					width: 1.8rem;
+					text-align: center;
+				}
+			}
+		}
+	}
 }

@@ -22,53 +22,13 @@
 	z-index: 1;	
 }
 
-.footer-top{
-	background-color: $body-color;
-	padding-top: 4.54rem;
-	padding-bottom: 5.2rem;
-
-	.service {
-		img {
-			margin-bottom: $spacer;
-			width: 10%;
-		}
-			
-		.title {
-			margin-bottom: $spacer / 4;
-			color: white;
-			font-weight: 400;
-			font-family:$body-font;
-		}
-	
-		p {
-			font-weight: 350;
-			margin-bottom: 0;
-			color: #5c5c5c;
-		}
-	}
-}
-
 .footer-main {
 	background-color: #1c1c1c;
-	padding-top: 5.39rem;
-	padding-bottom: 6.32rem;
-	
-	p {
-		color: #5c5c5c;
-	}
-
-	.widget {
-		a {
-			color: #5c5c5c;
-			
-			&:hover {
-			color: white;
-			}
-		}
-	}
+	padding-top: 6.875rem;
+	padding-bottom: 4.325rem;
 }
 
 .footer-bottom {
-	background-color: $body-color;
+	background-color: #282828;
 }
 

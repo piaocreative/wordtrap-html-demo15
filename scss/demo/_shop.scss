@@ -22,11 +22,9 @@
 	position: relative;		
 	@include transition(all 0.5s ease-in-out);
 
-	.category-desc {
+	.category-details {
 		position: absolute;
 		left: 3rem;
-		// bottom: 3rem;
-		// height: 90%;
 		bottom: 50%;
 		transform: translateY(50%);
 		z-index: 1;
@@ -38,16 +36,12 @@
 
 		button {
 			background-color: transparent;
-			padding: 1.5rem 3rem;
 			border: 1px solid $theme-color;
+			color: $theme-color;
 		
 			&:hover {
 				color: white;
 				background-color: $theme-color;
-			}
-
-			@include media-breakpoint-down(sm) {
-				padding: $spacer / 2 $spacer *1.5;
 			}
 		}
 	}
@@ -58,7 +52,6 @@
 .product {
 	margin-bottom: 1.875rem;
 	position: relative;
-	font-family: $heading-font;
 	text-align: center;
 
 	.product-image {
@@ -166,103 +159,107 @@
 			color: rgba($theme-color, 1);
 		}
 	}
+
+	.onsale, .onhit, .ontop, .onbest {
+		position: absolute;
+		top: 2rem;
+		left: 1rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		width: 2.7rem;
+		height: 2.7rem;
+		color: white;
+		margin-top: -2rem;
+		margin-right: 0.2rem;
+		font-family: $body-font;
+	}
+	
+	.onsale {
+		background-color: $theme-color;
+	}
+	
+	.onhit {
+		background-color: #282828;
+	}
+	
+	.ontop {
+		background-color: #282828;
+	}
+	
+	.onbest {
+		background-color: $theme-color;
+	}
+	
 }
 
 .ads {
-	position: relative;
-	display: block;
-	// background-position: center;
-	// background-repeat: no-repeat;
-	// background-size: cover;
-	// min-height: 44rem;
-	// width: 100%;
+    position: relative;
+    display: block;
+	margin-bottom: 1.5rem;
 
-	span {
-		font-size: 1.5rem;
-	}
+    .ads-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
 
-	small {
-		font-size: 0.935rem;
-	}
+        .ads-bg-img {
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
 
-	.title-font {
-		font-size: 1.5rem;
-	}
+    .ads-body {
+        position: relative;
+        z-index: 1;
 
-	.price-font {
-		font-size: 2.25rem;
-	}
+		span {
+			font-size: 1.5rem;
+		}
+    }
 
-	.ads-body-bottom {
-		position: absolute;
-		left: 0;
-		bottom: 0;
-	}
-
-	.ads-body-top {
-		position: absolute;
-		left: 0;
-		top: 0;
-	}
-	
-}	
-	.ads1 {
-		.ads-body-bottom {
-			padding-bottom: 4.6rem;
-			padding-left: 4.65rem;
-			
-			.title {
-				font-size: 3rem;
-				line-height: 1.2;
-			}
-			
-			.price {
-				color: #6c4015;
-			}
+	&.ads1 {
+		.ads-body {
+			padding: 13rem 4rem 4.5rem;
 		}
 	}
 
-	.ads2 {
-		.ads-body-top {
-			padding-top: 2.34rem;
-			padding-left: 4.2rem;
-			
-			.price-wrap {
-				position: absolute;
-				top: 144%;
-				left: 33%;
-				width: 12rem;
-				height: 12rem;
-				
-				.price {
-					position: absolute;
-					top: 30%;
-					left: 11%;
-					
-					del {
-						font-size: 1.125rem;
-					}
-				}
-			}
+	&.ads2 {
+		.ads-body {
+			padding: 3rem 4rem 7rem;
 
-			@include media-breakpoint-down(sm) {
-				h4 {
-					line-height: 1.25;
+			.onsale {
+				padding: 3.5rem 0;
+				border-radius: 50%;
+				margin-top: 6rem;
+
+				del {
+					font-size: 1.125rem;
 				}
 			}
 		}
 	}
 
-	.ads3 {
-		.ads-body-top {
-			padding-top: 2.8rem;
-			padding-left: 2.5rem;
+	&.ads3 {
+		.ads-body {
+			padding: 3rem 2rem 7.5rem;
 		}
 
 		h1 {
 			font-size: 5.3rem;
 			color: #6c4015;
 		}
+
 		@include media-breakpoint-down(sm) {
 			h4 {
 				font-size: 1.5rem;
@@ -270,132 +267,15 @@
 		}
 	}
 
-	.ads4 {
-		.ads-body-bottom {
-			padding-bottom: 2.85rem;
-			padding-left: 2.43rem;
-			
-			del {
-				font-size: 1.125rem;
-			}
+	&.ads4 {
+		.ads-body {
+			padding: 7.5rem 2rem 3rem;
+		}
+		del {
+			font-size: 1.125rem;
 		}
 	}
-
-	
-
-
-.product-mark-wrapper {
-	position: absolute;
-	top: 2rem;
-	left: 1rem;
-}
-
-.product-mark {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 50%;
-	width: 2.7rem;
-	height: 2.7rem;
-	background-color: $body-color;
-	color: white;
-	margin-top: -2rem;
-	margin-right: 0.2rem;
-	font-family: $body-font;
-}
-
-.onshop {
-	position: absolute;
-	background-color: transparent;
-	color: white;
-	border: 1px solid white;
-	display: inline-block;
-	font-family: $body-font;
-	font-size: .75rem;
-	font-weight: 600;
-	line-height: 1;
-	text-transform: uppercase;
-	padding: 1.3rem 2.5rem;
-	bottom: 18%;
-	left: 50%;
-	transform: translateX(-50%);
-	
-	&:hover {
-		color: $theme-color;
-		background-color: white;
-	}
-}
-
-[data-cart-items] {
-	position: relative;
-	display: inline-block;
-
-	&::before {
-		content: attr(data-cart-items);
-		position: absolute;
-		top: -.4rem;
-		right: -1rem;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 1rem;
-		height: 1rem;
-		font-size: 0.625rem;
-		font-weight: 500;
-		color: $theme-color;
-		font-size: 0.75rem;
-	}
-}
-
-.new-product {
-	position: relative;
-
-	h5 {
-		font-size: 1.187rem;
-	}
-
-	h2 {
-		font-size: 2.5rem;
-	}
-
-	.new-product-bottom {
-		position: absolute;
-		bottom: 1.1rem;
-		left: 3rem;
-	}
-
-	.new-product-content {
-		position: absolute;
-		top: 6rem;
-		left: 5.8rem;
-
-		h2 {
-			line-height: 1.3;
-		}
-
-		@include media-breakpoint-down(sm) {
-			top: 0;
-			left: 0.8rem;
-		}
+}	
 
 
-	}
 
-	.new_more {
-		position: absolute;
-		text-decoration: uppercase;
-		left: 6rem;
-		bottom: 5.5rem;
-		color: white;
-		@include transition(all 0.3s ease-in-out);
-	
-		&:hover {
-			color: $body-color;
-		}
-
-		@include media-breakpoint-down(md) {
-			bottom: $spacer ;
-			left: 0.8rem;
-		}
-	}
-}

@@ -1,34 +1,20 @@
-.main-bg {
+.error-404 {
   background-image: url(../images/404.png);
   background-repeat: no-repeat;
-  background-position: calc(100% - 6.25rem) center;
+  background-position: center;
   background-size: 100%;
   position: relative;
   background-position: 50%;
+  padding-top: 18.5rem;
+  padding-bottom: 6rem;
 }
 
-.main {
+.error-content {
   position: relative;
   text-align: center;
-  
-  p {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: $heading-color;
-  }
-
-  img {
-    width: 70%;
-
-    @include media-breakpoint-down(sm) {
-      width: 100%;
-    }
-  }
 }
 
-.link {
+.error-menu {
   padding-top: 4rem;
   color: $heading-color;
 
@@ -44,8 +30,8 @@
       font-size: 1rem;
       
       &:hover {
-        color: red;
-    }
+        color: $theme-color;
+      }
     }
   }
 }
