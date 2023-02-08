@@ -12,195 +12,207 @@
 
 //-------------------- Base Colors --------------------//
 
-$theme-color:                  #875722;
-$body-color:                   #282828;
-$heading-color:                #302f2d;
+$theme-color:                  				#875722;
 
 
 //-------------------- Font Families --------------------//
 
-$heading-font:                  'Montserrat', sans-serif;
-$body-font:                     'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$headings-font-family:                  	'Montserrat', sans-serif;
+$body-font:                     			'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 
 //-------------------- Redefine Bootstrap Variables ------------//
 
 // Theme Colors
-$primary:                       $theme-color;
-$secondary:                     $heading-color;
+$primary:                       			$theme-color;
+$secondary:                     			#302f2d;
+$body-color:                   				#282828;
+$headings-color:                			#302f2d;
+$gray-100:									#979797;
+$gray-200:									#eaeaea;
+$gray-300:									#7c7b7a;
+$gray-400:									#dbdbdb;
+$gray-500: 									#5c5c5c;
+$gray-600: 									#61605f;
+$gray-700:									#1c1c1c;
+$gray-800:									#cccccc;
+$gray-900:									#acacac;
+
+$dark:										#282828;
+$light:										#f3f5f4;
+
+
+// Gutter Width
+$grid-gutter-width: 						1.875rem;
+
+
+// Container max width
+$container-max-widths: (
+	xl: 1440px,
+  	xxl: 1530px
+);
 
 // Link
-$link-color:                    $body-color;
-$link-decoration:				none;
-$link-hover-color:				$theme-color;
+$link-color:                    			$body-color;
+$link-decoration:							none;
+$link-hover-color:							$theme-color;
+
 
 // Border
-$border-radius:					0.3125rem;
+$border-radius:								0.3125rem;
 
 
-$h1-font-size:                	3rem;
-$h2-font-size:                	1.875rem;
-$h3-font-size:                	1.25rem;
-$h4-font-size:                	1rem;
-$h5-font-size:                	0.875rem;
-$h6-font-size:               	0.75rem;
+// Typography
+$h1-font-size:                				3rem;
+$h2-font-size:                				1.875rem;
+$h3-font-size:                				1.25rem;
+$h4-font-size:                				1rem;
+$h5-font-size:                				0.875rem;
+$h6-font-size:               				0.75rem;
+
 
 // Line Height
-$line-height-base:            	30 / 14;
-$line-height-sm:              	30 / 16;
-$line-height-lg:              	30 / 12;
-$line-height-unit:              1;
-// Buttons
-$btn-padding-y:              	1.25rem;
-$btn-padding-x:              	4rem;
-$btn-font-size:              	0.75rem;
-
-$btn-padding-y-lg:              1.5rem;
-$btn-padding-x-lg:              3rem;
-$btn-font-size-lg:              1rem;
-$btn-border-radius-lg:          3rem;
-
-$btn-line-height:               1;
+$line-height-base:            				30 / 14;
+$line-height-sm:              				30 / 16;
+$line-height-lg:              				30 / 12;
+$line-height-unit:              			1;
 
 
 // Forms
-$input-color:                   $heading-color;
-$input-border-color:            $theme-color;
-$input-border-width:			0;
-$input-btn-focus-color-opacity: 1;
+$input-color:                   			$headings-color;
+$input-border-color:            			$theme-color;
+$input-border-width:						0;
+$input-btn-focus-color-opacity: 			1;
 
-$input-btn-padding-y:           1rem;
-$input-btn-padding-x:           1.5rem;
-$input-btn-font-size:           0.875rem;
+$input-btn-padding-y:           			1rem;
+$input-btn-padding-x:           			1.5rem;
+$input-btn-font-size:           			0.875rem;
 
-$input-btn-padding-y-lg:        1.5rem;
-$input-btn-padding-x-lg:        2.5rem;
-$input-btn-font-size-lg:        0.875rem;
+$input-btn-padding-y-lg:        			1.5rem;
+$input-btn-padding-x-lg:        			2.5rem;
+$input-btn-font-size-lg:        			0.875rem;
 
-$input-btn-line-height:         1;
+$input-btn-line-height:         			1;
 
-$input-btn-focus-width:         1px;
-$input-focus-border-color:      $theme-color;
+$input-btn-focus-width:         			1px;
+$input-focus-border-color:      			$theme-color;
 
 
-//-------------------- Top Bar --------------------//
+// Buttons
+$btn-font-family:               			$headings-font-family;
 
-$topbar-height:                 9.33rem;
-$topbar-line-height:            2.75rem;
-$topbar-color:                #857e83;
-$topbar-hover-color:            $theme-color;
+$btn-padding-y:              				1.125rem;
+$btn-padding-x:              				4rem;
+$btn-font-size:              				0.875rem;
+
+$btn-padding-y-sm:              			0.75rem;
+$btn-padding-x-sm:              			2.67rem;
+$btn-font-size-sm:              			0.583rem;
+
+$btn-padding-y-lg:             				1.875rem;
+$btn-padding-x-lg:             				3.25rem;
+$btn-font-size-lg:              			0.875rem;
+
+$btn-padding-y-lg:              			1.5rem;
+$btn-padding-x-lg:              			3rem;
+$btn-font-size-lg:              			1rem;
+
+$btn-border-radius:             			1.375rem;
+$btn-border-radius-sm:          			0.916rem;
+$btn-border-radius-lg:          			4.125rem;
+
+$btn-font-weight:               			700;
+$btn-line-height:               			1;
+
+$btn-border-width:              			1px;
+
+
+// Navbar
+$navbar-padding-y:							2.625rem;
+$navbar-light-color:						$body-color;
+$navbar-light-hover-color:			 		$theme-color;
+$navbar-light-active-color:					$theme-color;
+$navbar-brand-padding-y:					0;
+$navbar-nav-link-padding-x:					1.25rem;
+$nav-link-height:							1;
+$navbar-toggler-padding-y:					0;
+$navbar-toggler-padding-x:					0;
+$navbar-light-toggler-icon-bg:				url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#343434' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+$navbar-light-toggler-border-color:			transparent;
+$navbar-toggler-border-radius:				0;
+
+
+// Navs
+$nav-link-padding-y:						0.9375rem;
+$nav-link-padding-x:						1rem;
+$nav-link-font-size:						1.25rem;
+$nav-link-font-weight:				 		400;
+$nav-link-color:							$body-color;
+$nav-link-hover-color:						$theme-color;
+
+
+// Tabs
+$nav-tabs-border-color:						$theme-color;
+$nav-tabs-border-width:						2px;
+$nav-tabs-border-radius:					0;
+$nav-tabs-link-hover-border-color:		  	$theme-color;
+$nav-tabs-link-active-color:			 	$theme-color;
+$nav-tabs-link-active-border-color:			$theme-color;
+
+
+// Accordion
+$accordion-padding-y:						1.875rem;
+$accordion-padding-x:						2.25rem;
+$accordion-color:							$theme-color;
+$accordion-bg:								rgba($theme-color, 0.3);
+$accordion-border-width:					0;
+$accordion-border-radius:				  	0;
+
+$accordion-button-color:					$body-color;
+$accordion-button-bg:						transparent;
+$accordion-button-active-bg:			 	transparent;
+$accordion-button-active-color:			  	$theme-color;
+
+$accordion-button-focus-border-color:	  	none;
+$accordion-button-focus-box-shadow:		 	none;
+
+$accordion-icon-width:					  	1.25rem;
+$accordion-icon-color:					 	$body-color;
+
+
+// Pagination
+$pagination-bg:								transparent;
+$pagination-padding-y:					 	1rem;
+$pagination-padding-x:					 	1rem;
+$pagination-border-radius:				 	0.5rem;
+$pagination-border-width:				  	0;
+
+$pagination-hover-color:					#FFFFFF;
+$pagination-hover-bg:						$theme-color;
+
+$pagination-active-color:				  	#FFFFFF;
+$pagination-active-bg:						$theme-color;
+
+
+// Options
+$enable-reduced-motion:       				false;
+$enable-shadows:							true;
 
 
 //-------------------- Header --------------------//
 
-$header-height:                 3.09rem;
-
-// Sticky Header
-$sticky-header-height:          3.75rem;
-
-
-//-------------------- Primary Menu --------------------//
-
-$primary-menu-padding:			2.375rem;
-$sticky-menu-padding:			1.40625rem;
-
-$primary-menu-font:             $body-font;
-$primary-menu-font-weight:      400;
-$primary-menu-font-size:        0.9375rem;
-$primary-menu-font-tt:          initial;
-$primary-menu-font-color:       $heading-color;
-$primary-menu-font-spacing:     0;
-
-// top Button
-$top-btn-font-size:        		1.5rem;
-$top-btn-font-color:       	  #302f2d;
+$header-height:                 			8.75rem;
 
 
 //-------------------- Section --------------------//
 
-$section-spacer:				8rem;
+$section-spacer:							8rem;
 
 
-//-------------------- Social Icons Colors --------------------//
+//-------------------- SVG Icons --------------------//
 
-$facebook:                    #3B5998;
-$delicious:                   #205CC0;
-$paypal:                      #00588B;
-$flattr:                      #F67C1A;
-$android:                     #A4C639;
-$smashmag:                    #E53B2C;
-$gplus:                       #DD4B39;
-$wikipedia:                   #333333;
-$stumbleupon:                 #F74425;
-$foursquare:                  #25A0CA;
-$call:                        #444444;
-$ninetyninedesigns:           #F26739;
-$forrst:                      #5B9A68;
-$digg:                        #191919;
-$spotify:                     #81B71A;
-$reddit:                      #C6C6C6;
-$blogger:                     #FC4F08;
-$cc:                          #688527;
-$dribbble:                    #EA4C89;
-$evernote:                    #5BA525;
-$flickr:                      #FF0084;
-$google:                      #DD4B39;
-$instapaper:                  #333333;
-$klout:                       #FF5F52;
-$linkedin:                    #0E76A8;
-$vk:                          #2B587A;
-$rss:                         #EE802F;
-$skype:                       #00AFF0;
-$twitter:                     #00ACEE;
-$youtube:                     #C4302B;
-$vimeo:                       #86C9EF;
-$aim:                         #FCD20B;
-$yahoo:                       #720E9E;
-$email3:                      #6567A5;
-$macstore:                    #333333;
-$myspace:                     #666666;
-$podcast:                     #E4B21B;
-$cloudapp:                    #525557;
-$dropbox:                     #3D9AE8;
-$ebay:                        #89C507;
-$github:                      #171515;
-$googleplay:                  #DD4B39;
-$itunes:                      #222222;
-$plurk:                       #CF5A00;
-$pinboard:                    #0000E6;
-$soundcloud:                  #FF7700;
-$tumblr:                      #34526F;
-$wordpress:                   #1E8CBE;
-$yelp:                        #C41200;
-$intensedebate:               #009EE4;
-$eventbrite:                  #F16924;
-$scribd:                      #666666;
-$stripe:                      #008CDD;
-$print:                       #111111;
-$dwolla:                      #FF5C03;
-$statusnet:                   #131A30;
-$acrobat:                     #D3222A;
-$drupal:                      #27537A;
-$buffer:                      #333333;
-$pocket:                      #EE4056;
-$bitbucket:                   #0E4984;
-$stackoverflow:               #EF8236;
-$hackernews:                  #FF6600;
-$xing:                        #126567;
-$instagram:                   #3F729B;
-$quora:                       #A82400;
-$openid:                      #E16309;
-$steam:                       #111111;
-$amazon:                      #E47911;
-$disqus:                      #E4E7EE;
-$plancast:                    #222222;
-$appstore:                    #000000;
-$pinterest:                   #C8232C;
-$fivehundredpx:               #111111;
-$si_text_color:               #FFFFFF;
-
-//grid
-
-$grid-gutter-width : 1.875rem;
-
-$enable-reduced-motion:       false;
+$free-shipping-icon: url("data:image/svg+xml,<svg width='23' height='18' viewBox='0 0 23 18' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M2.3999 4H1.3999' stroke='#ffffff' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/><path d='M3.3999 1H1.3999' stroke='#ffffff' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/><path d='M16.8 13H6.2C4.6 13 3.39998 11.4999 3.89998 9.8999L6.09999 2.7002C6.39999 1.7002 7.29998 1 8.39998 1H19C20.6 1 21.8 2.5001 21.3 4.1001L19.1 11.2998C18.8 12.2998 17.9 13 16.8 13Z' stroke='#ffffff' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/><path d='M4.1001 11.7002L11.1001 7.1001' stroke='#ffffff' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/><path d='M13.6001 7.1001L18.7001 12.1001' stroke='#ffffff' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/><path d='M16.3999 17H2.3999' stroke='#ffffff' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/><path d='M6.6001 1.7998L11.4001 7.3999C11.7001 7.7999 12.3001 7.9001 12.7001 7.6001L21.1001 2.2998' stroke='#ffffff' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+$external-link-icon: url("data:image/svg+xml,<svg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M12.2424 5.75734L5.17136 12.8284' stroke='#{$theme-color}' stroke-width='2' stroke-miterlimit='10' stroke-linecap='square' stroke-linejoin='round'/><path d='M4.81791 4.69668H13.3032V13.182' stroke='#{$theme-color}' stroke-width='2' stroke-miterlimit='10' stroke-linecap='square'/></svg>");
+$checker-icon: url("data:image/svg+xml,<svg width='34' height='28' viewBox='0 0 34 28' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M32.9175 0.669397C32.1147 0.0960544 31.0826 0.210723 30.5092 1.0134L13.6507 22.9151L3.78784 14.4296C3.09974 13.8563 1.95289 13.8563 1.37947 14.5443C0.806054 15.2323 0.806061 16.379 1.49416 16.9523L12.7332 26.5845C13.0772 26.8138 13.4213 27.0432 13.88 27.0432C13.9947 27.0432 13.9947 27.0432 14.1094 27.0432C14.5681 27.0432 15.0269 26.6992 15.2562 26.3552L33.1469 2.96277C33.835 2.38943 33.7203 1.24274 32.9175 0.669397Z' fill='#{$theme-color}'/></svg>");
+$arrow-up-icon: url("data:image/svg+xml,<svg width='21' height='12' viewBox='0 0 21 12' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M19.3999 10.5L10.3999 1.5L1.3999 10.5' stroke='#{$theme-color}' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+$arrow-down-icon: url("data:image/svg+xml,<svg width='21' height='12' viewBox='0 0 21 12' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M19.3999 1.5L10.3999 10.5L1.3999 1.5' stroke='#{$theme-color}' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/></svg>");

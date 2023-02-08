@@ -61,10 +61,10 @@ h3,
 h4,
 h5,
 h6 {
-	color: $heading-color;
+	color: $headings-color;
 	line-height: 1;
 	margin: 0 0 1.875rem 0;
-	font-family: $heading-font;
+	font-family: $headings-font-family;
 	font-weight: 700;
 }
 
@@ -81,6 +81,7 @@ pre,
 dl,
 dd,
 blockquote,
+q,
 address,
 table,
 fieldset,
@@ -91,7 +92,7 @@ small { font-family: $body-font; }
 ul { margin: 0; }
 ul li { list-style: none; }
 
-i { 
+i {
 	display: inline-block;
 	line-height: inherit;
 }
@@ -131,5 +132,31 @@ html {
 	--------------------------------------------------------------*/
 	@media only screen and (max-width: 480px) {
 			font-size: 75%;
+	}
+}
+
+
+/* Blockquote */
+blockquote,
+q {
+	color: $theme-color;
+	display: block;
+	font-size: 1.875rem;
+	font-style: italic;
+	font-weight: 300;
+	line-height: 3.75rem;
+
+	&::before {
+		color: $theme-color;
+		font-size: 3rem;
+		font-style: italic;
+		font-weight: 300;
+		line-height: 1;
+		display: block;
+		text-align: center;
+	}
+
+	&::after {
+		content: "";
 	}
 }

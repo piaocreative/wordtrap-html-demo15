@@ -17,72 +17,168 @@
 
 
 #header {
-	position: relative;	
-	
+	position: relative;
+
 	// Transparent header
 	&.transparent-header {
 		background: transparent;
 		z-index: 199;
 
-		& + #banner {
-			margin-bottom: $header-height;
+		& + #content {
+			@include media-breakpoint-up(xl) {
+				top: -$header-height;
+				margin-bottom: -$header-height;
+				position: relative;
+			}
 		}
 	}
 }
 
-
-/* ----------------------------------------------------------------
-	Sticky Header
------------------------------------------------------------------*/
-
-#header-wrap {
-	min-height: 8.62rem;
-	margin-left: 4.13rem;
-	margin-right: 3.7rem;
+#header-content {
+	margin-left: 4.25rem;
+	margin-right: 4.25rem;
 }
+
 
 /* ----------------------------------------------------------------
 	Logo
 -----------------------------------------------------------------*/
 
 .navbar-brand {
-	margin-left: -8rem;
+	@include media-breakpoint-up(lg) {
+		position: absolute;
+		left: 50%;
 
-	@include media-breakpoint-down(lg) {
-		margin-left: auto;
-		margin-right: auto;
+		@include translateX(-50%);
 	}
 
 	img {
-		margin-top: $spacer * 3;
-		margin-bottom: $spacer * 3;
-		width: 6.9rem;
+		max-width: 9.375rem;
 	}
 }
+
+
+/* ----------------------------------------------------------------
+	Navbar toggler
+-----------------------------------------------------------------*/
+
+.navbar-toggler {
+	border-radius: 0;
+	z-index: 200;
+
+	@include media-breakpoint-up(lg) {
+		margin-right: 5.5rem;
+	}
+
+	&:focus {
+		@include box-shadow(none);
+	}
+}
+
 
 /* ----------------------------------------------------------------
 	Primary Menu
 -----------------------------------------------------------------*/
 
+#navbarCollapse {
+	background-color: $white;
+	position: initial;
+    box-shadow: none;
+    width: 100%;
+    padding: 0 0 2.8125rem 0;
+
+	@include media-breakpoint-up(lg) {
+		position: fixed;
+		left: 10rem;
+		top: 0;
+		width: 23.5rem;
+		height: 100%;
+		padding: 2.8125rem 3rem;
+		z-index: 199;
+
+		@include transition(all .35s ease);
+		@include box-shadow(8px 0 51px 21px rgba(169, 169, 169, 0.11));
+
+		&.collapse {
+			&:not(.show) {
+				display: block;
+				top: -100vh;
+			}
+		}
+
+		&.collapsing {
+			top: -100vh;
+		}
+	}
+}
+
 #primary-menu {
 	.nav-link {
-		color: $primary-menu-font-color;
+		color: $body-color;
 		display: block;
-		font-family: $primary-menu-font;
-		font-weight: $primary-menu-font-weight;
-		font-size: $primary-menu-font-size;
+		font-family: $body-font;
+		font-weight: 300;
+		font-size: 1.5rem;
 		line-height: 1;
-		letter-spacing: $primary-menu-font-spacing;
-		text-transform: $primary-menu-font-tt;				
+		padding: 0.9375rem 0;
 	}
 
-	.nav-item {			
-		padding: $spacer / 2  1rem;
-
+	.nav-item {
 		&.current,
 		&:hover {
-			a {
+			& > .nav-link {
 				color: $theme-color;
+			}
+		}
+
+		& > .dropdown-menu {
+			background-color: transparent;
+			border: none;
+			border-radius: 0;
+			box-shadow: none;
+			padding: 0 0 0 0.9375rem;
+
+			&[data-bs-popper] {
+				margin-top: 0;
+			}
+
+			@include media-breakpoint-up(lg) {
+				position: relative;
+				display: block;
+				top: -1000px;
+				opacity: 0;
+				height: 0;
+
+				@include transition(transform .5s ease-out);
+				@include translate3d(0, -20px, 0);
+			}
+
+			.nav-item {
+				& > .nav-link {
+					border: none;
+					font-size: 0.875rem;
+					font-weight: 400;
+				}
+
+				&.current,
+				&:hover {
+					& > .nav-link {
+						color: $theme-color;
+					}
+				}
+			}
+		}
+
+		@include media-breakpoint-up(lg) {
+			&.current,
+			&:hover {
+				.dropdown-menu {
+					top: auto;
+					opacity: 1;
+					height: auto;
+
+					@include translate3d(0, 0, 0);
+				}
 			}
 		}
 	}
@@ -92,7 +188,7 @@
 	Mega Menu
 -----------------------------------------------------------------*/
 
-// Please ignore mega menu now 
+// Please ignore mega menu now
 
 
 /* ----------------------------------------------------------------
@@ -100,21 +196,13 @@
 -----------------------------------------------------------------*/
 
 #top-btns {
-	ul {
-		display: flex;		
+	.nav-link {
+		line-height: 1;
 
-		li {
-			padding: 0 0.75rem;
-
-			a {
-				color: $top-btn-font-color;
-				font-size: $top-btn-font-size;
-				line-height: 1;
-
-				&:hover {
-					color: $primary;
-				}
-			}
+		@include media-breakpoint-down(lg) {
+			text-align: center;
+			padding-left: 1rem;
+			padding-right: 1rem;
 		}
 	}
 }
@@ -124,133 +212,55 @@
 	Top Links
 -----------------------------------------------------------------*/
 
-
 #top-links {
-	position: relative;
-	margin-left: 6.5rem;
-	margin-top: $spacer / 4;
-
-	@include media-breakpoint-down(lg) {
-		margin-left: $spacer * 1.5;
-	}
-	
-	ul {
-		margin: 0;		
-		display: flex;
-		
-		li {			
-			position: relative;	
-			padding-right: 1.875rem;		
-		}
-	}
-
-	li {
-		> a {
-			color: $topbar-color;
-			display: block;
-
-			&:hover {
-				color: $topbar-hover-color;
-			}
-		}
-
-		i {
-			margin-left: $spacer / 2;
-		}
-
-		&:focus, &:hover{
-			ul {
-				display: block;
-			}
-		}
+	.nav-link {
+		font-size: 0.75rem;
 	}
 
 	.dropdown-toggle {
 		&::after {
 			margin-left: .75em;
-		}
-	}
-
-	ul {
-		ul,
-		.dropdown-menu {
-			display: none;
-			position: absolute;
-			z-index: 210;
-			line-height: 1.5;
-			background: $white;
-			border: 0;
-			top: $topbar-line-height;
-			left: 0;
-			width: 8.75rem;
-			margin: 0;
-			border-top: 3px solid $theme-color;
-			@include box-shadow(0 0 5px -1px rgba($black, 0.2));
-		}
-
-		ul {
-			li {
-				float: none;
-				height: 2.25rem;	
-				padding-right: 0;
-			}
-
-			a {
-				color: $heading-color;
-				height: 2.25rem;
-				line-height: 2.25rem;
-				font-size: 0.75rem;				
-				padding: 0 0.75rem;
-
-				&:hover {
-					color: $theme-color;
-				}
-			}
-
-			img {
-				display: inline-block;
-				position: relative;
-				top: -1px;
-				width: 1rem;
-				height: 1rem;
-				margin-right: $spacer / 4
-			}
-		}
-	}
-}
-
-#top-links-mobile {
-	.nav-link {
-		color: $topbar-color;
-		font-size: 0.75rem;
-
-		&:hover {
-			color: $theme-color;
 		}
 	}
 
 	.dropdown-menu {
+		background: $white;
 		border: 0;
-		top: $topbar-line-height;
+		top: 1.5rem;
 		left: 0;
-		width: 100%;		
+		width: 100%;
 		margin: 0;
-		border-top: 3px solid $theme-color;
+		border-top: 3px solid $link-hover-color;
+
 		@include border-radius(0);
 		@include box-shadow(0 0 5px -1px rgba($black, 0.2));
 
-		@include media-breakpoint-up(xl) {
+		@include media-breakpoint-up(lg) {
 			width: 8.75rem;
 		}
-	}
 
-	.dropdown-toggle {
-		&::after {
-			margin-left: .75em;
+		a.dropdown-item {
+			color: $headings-color;
+			height: 2.25rem;
+			line-height: 2.25rem;
+			font-size: 0.75rem;
+			padding: 0 0.75rem;
+
+			&:hover {
+				color: $theme-color;
+			}
+		}
+
+		img {
+			display: inline-block;
+			position: relative;
+			top: -1px;
+			width: 1rem;
+			height: 1rem;
+			margin-right: 0.25rem;
 		}
 	}
 }
-
 
 
 /* ----------------------------------------------------------------
@@ -261,31 +271,50 @@
 	display: flex;
 }
 
+
 /* ----------------------------------------------------------------
 	Top Social
 -----------------------------------------------------------------*/
 
+#top-social {
+	@include media-breakpoint-up(lg) {
+		position: absolute;
+		left: 4.25rem;
+		// bottom: 10rem;
+		top: 42.75rem;
+		z-index: 200;
+	}
 
-/* ----------------------------------------------------------------
-	Top Search
------------------------------------------------------------------*/
+	ul {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 1rem;
+		width: 100%;
 
+		@include media-breakpoint-up(lg) {
+			justify-content: flex-start;
+			margin-bottom: 0;
+			transform-origin: 0 0;
 
+			@include rotate(-90deg);
+		}
 
+		li {
+			margin-right: 3.25rem;
 
-/* ----------------------------------------------------------------
-	Top Cart
------------------------------------------------------------------*/
+			span,
+			a {
+				text-transform: uppercase;
+				font-size: 0.875rem;
+			}
 
+			span {
+				color: $gray-400;
+			}
 
-
-
-/* ----------------------------------------------------------------
-	Top Account
------------------------------------------------------------------*/
-
-
-
-
-
-
+			a {
+				color: $headings-color;
+			}
+		}
+	}
+}

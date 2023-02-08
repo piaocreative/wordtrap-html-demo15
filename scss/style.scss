@@ -1,10 +1,10 @@
 /*-----------------------------------------------------------------------------------
 
-    Theme Name: Saler
-    Theme URI: 
+    Theme Name: Wordtrap
+    Theme URI:
     Description: The Multi-Purpose Ecommerce Template
     Author: John Piao
-    Author URI: 
+    Author URI:
     Version: 1.0
 
     SASS Stylesheet
@@ -17,47 +17,46 @@
 
 
 // Bootstrap
-@import "scss/bootstrap/bootstrap";
+@import "bootstrap/bootstrap";
+
+
+// Core CSS
 @import "demo/typography";
 
-#demo15 {
-    // Core CSS
-
-    // Content Blocks
-    @import "demo/header";
-    @import "demo/404";
-    @import "demo/banner";
-    @import "demo/blog";
-    @import "demo/shop";
-  
-
-    // Footer
-    @import "demo/footer";
+// Content Blocks
+@import "demo/header";
+@import "demo/banner";
+@import "demo/blog";
+@import "demo/shop";
 
 
-    // Page Title
-    @import "demo/pagetitle";
+// Footer
+@import "demo/footer";
 
 
-    // Form
-    @import "demo/form";
+// Page
+@import "demo/page";
 
 
-    // Widgets
-    @import "demo/widgets";
+// Form
+@import "demo/form";
 
 
-    // Utilities
-    @import "demo/utilities";
+// Widgets
+@import "demo/widgets";
 
 
-    // Shortcodes
-    @import "demo/shortcodes/feature-box";
-    @import "demo/shortcodes/headings";
-    @import "demo/shortcodes/logos";
-    @import "demo/shortcodes/icon-box";
+// Utilities
+@import "demo/utilities";
 
 
-    // Extras
-    @import "demo/extras";
-}
+// Shortcodes
+@import "demo/shortcodes/feature-box";
+@import "demo/shortcodes/headings";
+@import "demo/shortcodes/logos";
+@import "demo/shortcodes/icon-box";
+@import "demo/shortcodes/socials";
+
+
+// Extras
+@import "demo/extras";

@@ -21,49 +21,53 @@
 
 	.widget-title {
 		font-size: $h5-font-size;
-		font-family: $heading-font;
+		font-family: $headings-font-family;
 		font-weight: 600;
 		margin-bottom: 1.5rem;
-	}	
+	}
 
 	// Widget - Social
 	&.widget-social {
 		.social-icons {
 			li {
-				padding: 0.25rem;
+				padding: 0 0.25rem;
+
+				&:last-child {
+					padding-right: 0;
+				}
 
 				a {
-					background-color: #282828;					
-					color: white;
+					background-color: #282828;
+					border-radius: 50%;
+					color: $white;
 					display: inline-block;
 					line-height: 1.8125rem;
 					width: 1.8125rem;
-					height: 1.8125rem;		
+					height: 1.8125rem;
 					vertical-align: middle;
 					text-align: center;
-					@include border-radius(50%);
-		
+
 					&:hover {
 						color: $theme-color;
 					}
-		
+
 					i {
 						vertical-align: top;
 						line-height: 1.8125rem;
 					}
 
-					@include media-breakpoint-down(sm) {
-						width: 2.5rem;
-						height: 2.5rem;
-						display: flex;
-						align-items: center;
-						justify-content: center;
+					// @include media-breakpoint-down(sm) {
+					// 	width: 2.5rem;
+					// 	height: 2.5rem;
+					// 	display: flex;
+					// 	align-items: center;
+					// 	justify-content: center;
 
-						
-						i {
-							font-size: 1.5rem;
-						}
-					}
+
+					// 	i {
+					// 		font-size: 1.5rem;
+					// 	}
+					// }
 				}
 			}
 		}
@@ -96,7 +100,7 @@
 				margin-right: $spacer / 4;
 				width: 3.5rem;
 				height: 2rem;
-				background-color: white;
+				background-color: $white;
 				background-size: 80% auto;
 				background-repeat: no-repeat;
 				background-position: center;
@@ -122,6 +126,7 @@
 		}
 	}
 
+	// Widget - HTML
 	&.widget-custom-html {
 		.widget-content {
 			p {
@@ -129,19 +134,87 @@
 			}
 
 			a {
-				color: white;
-	
+				color: $white;
+
 				&:hover {
 					color: $theme-color;
 				}
-	
+
 				span {
 					display: inline-block;
-					color: white;
-					margin-right: $spacer * 1.5;
+					color: $white;
+					margin-right: 1.5rem;
 					font-size: 1.2rem;
 					width: 1.8rem;
 					text-align: center;
+				}
+			}
+		}
+	}
+
+	// Widget - Subscribe
+	&.widget-subscribe {
+		.widget-content {
+			#subscribe-form {
+				max-width: 30rem;
+    			margin: auto;
+
+				.input-group {
+					.input-group-append {
+						margin-left: -3.125rem;
+					}
+
+					.btn {
+						padding-left: 1.6875rem;
+						padding-right: 1.6875rem;
+					}
+				}
+			}
+		}
+	}
+
+	// Widget - Latest Posts
+	&.widget-latest-posts {
+		.widget-content {
+			.entry-title {
+				h4 {
+					font-family: $body-font;
+					font-size: 1.1875rem;
+					line-height: 1.875rem;
+
+					a {
+						color: $headings-color;
+
+						&:hover {
+							color: $theme-color;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// Widget - Latest Comments
+	&.widget-latest-comments {
+		.comment-link {
+			color: $theme-color;
+		}
+	}
+
+	// Widget - Search
+	&.widget-search {
+		.search-form {
+			.input-group {
+				.form-control {
+					border-radius: 3.1875rem;
+				}
+
+				.btn {
+					position: absolute;
+					right: 1.5rem;
+					padding-left: 0;
+					padding-right: 0;
+					z-index: 4;
 				}
 			}
 		}

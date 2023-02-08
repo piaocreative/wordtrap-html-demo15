@@ -1,721 +1,715 @@
 <!doctype html>
 <html dir="ltr" lang="en-US">
 <head>
+	<!-- Meat Tags
+	============================================= -->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="JohnPiao" />
 
-  <!-- Meat Tags
-  ============================================= -->
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="JohnPiao" />
+	<!-- Fonts
+	============================================= -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Monoton&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-  <!-- Fonts
-  ============================================= -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">    
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Monoton&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<!-- Fontawesome
+	============================================= -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" type="text/css" />
 
-  <!-- Fontawesome
-  ============================================= -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" type="text/css" />
+	<!-- Slick
+	============================================= -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- Slick
-  ============================================= -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- Stylesheets
+	============================================= -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
 
-  <!-- Stylesheets
-  ============================================= -->
-  <link rel="stylesheet" href="css/style.css" type="text/css" />
-
-  <!-- Document Title
-  ============================================= -->
-  <title>Demo15 | About</title>
+	<!-- Document Title
+	============================================= -->
+	<title>Demo15 | Wordtrap</title>
 </head>
-<body id="demo15">
-
-  <!-- Document Wrapper
-  ============================================= -->
-  <div id="wrapper" class="clearfix">
-    
-    <!-- Header
-    ============================================= -->
-    <header id="header" class="transparent-header">
-      
-      <div id="header-wrap">
-
-        <nav class="navbar navbar-light bg-white ps-0">
-          <div class="container-fluid px-0">
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-              <!-- Top Links
-              ============================================= -->
-              <div id="top-links" class="me-auto d-lg-block d-none">
-                <ul>
-                  <li><a href="#">USD<i class="fas fa-chevron-down"></i></a>
-                    <ul>
-                      <li><a href="#">EUR</a></li>
-                      <li><a href="#">AUD</a></li>
-                      <li><a href="#">GBP</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">ENG<i class="fas fa-chevron-down"></i></a>
-                    <ul>
-                      <li><a href="#"><img src="images/icons/flags/french.png" alt="French"> FR</a></li>
-                      <li><a href="#"><img src="images/icons/flags/italian.png" alt="Italian"> IT</a></li>
-                      <li><a href="#"><img src="images/icons/flags/german.png" alt="German"> DE</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div><!-- .top-links -->
-
-
-                <!-- Logo
-                ============================================= -->
-                <a href="home.html" class="navbar-brand me-md-auto " data-dark-logo="images/logo.png">
-                  <img src="images/logo.png" alt="Saler Logo">
-                </a><!-- #logo -->
-
-                <!-- Top Buttons
-              ============================================= -->
-              <div id="top-btns" class="d-lg-block d-none" >
-                
-                <ul>
-                  <li>
-                    <a href="#"><i class="far fa-heart"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="far fa-user-circle"></i></a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span data-cart-items="2">
-                      <i class="fas fa-shopping-cart"></i></a>
-                  </li>
-                </ul>
-
-              </div><!-- #top-btns -->
-
-            <div id="navbarCollapse" class="collapse navbar-collapse ">
-
-              <!-- Top Links
-              ============================================= -->
-              <div id="top-links" class="me-auto ms-3 d-lg-none d-block">
-                  <ul class="nav navbar-nav">
-                      <li class="nav-item dropdown">
-                          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
-                          <ul class="dropdown-menu">
-                              <li><a href="#" class="dropdown-item">EUR</a></li>
-                              <li><a href="#" class="dropdown-item">AUD</a></li>
-                              <li><a href="#" class="dropdown-item">GBP</a></li>
-                          </ul>
-                      </li>
-                      <li class="nav-item dropdown">
-                          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">ENG</a>
-                          <ul class="dropdown-menu">
-                              <li><a href="#" class="dropdown-item"><img src="images/icons/flags/french.png" alt="French"> FR</a></li>
-                              <li><a href="#" class="dropdown-item"><img src="images/icons/flags/italian.png" alt="Italian"> IT</a></li>
-                              <li><a href="#" class="dropdown-item"><img src="images/icons/flags/german.png" alt="German"> DE</a></li>
-                          </ul>
-                      </li>
-                  </ul>
-              </div><!-- .top-links -->
-              
-              <!-- Primary Navigation
-              ============================================= -->
-              <nav id="primary-menu" class="me-auto">
-
-                <ul class="navbar-nav">
-                  <li class="current  nav-item"><a href="#" class="nav-link">Home</a>                                        
-                  <li class="nav-item"><a href="#" class="nav-link">Shop</a></li>
-                  <li class="nav-item"><a href="#" class="nav-link">Accessories</a></li>                                    
-                  <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                  <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-                  <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-                </ul>                                
-
-              </nav><!-- #primary-menu -->
-            
-                <!-- Top Buttons
-              ============================================= -->
-              <div id="top-btns" class="d-lg-none d-block">
-                
-                <ul class="navbar-nav flex-row">
-                  <li class="nav-item">
-                    <a href="#" class="nav-link"><i class="far fa-heart"></i></a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link"><i class="far fa-user-circle"></i></a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <span data-cart-items="2">
-                      <i class="fas fa-shopping-cart"></i></a>
-                  </li>
-                </ul>
+<body id="about-page">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Header
+		============================================= -->
+		<header id="header">
+
+			<div id="header-content">
+
+				<nav class="navbar navbar-light">
+
+					<div class="container-fluid px-0">
+
+						<!-- Logo
+						============================================= -->
+						<a href="index.html" id="logo" class="navbar-brand me-lg-auto " data-dark-logo="images/logo.png">
+							<img src="images/logo.png" alt="Wordtrap Logo">
+						</a><!-- #logo -->
+
+						<!-- Navbar Toggler
+						============================================= -->
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+						<!-- Top Links
+                        ============================================= -->
+                        <ul id="top-links" class="nav align-items-center d-none d-lg-flex">
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item">EUR</a></li>
+                                    <li><a href="#" class="dropdown-item">AUD</a></li>
+                                    <li><a href="#" class="dropdown-item">GBP</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">ENG</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/french.png" alt="French"> FR</a></li>
+                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/italian.png" alt="Italian"> IT</a></li>
+                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/german.png" alt="German"> DE</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
+                            </li>
+                        </ul><!-- #top-links -->
+
+						<!-- Top Buttons
+                        ============================================= -->
+                        <ul id="top-btns" class="nav ms-auto d-none d-lg-flex align-items-center">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="far fa-heart"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="far fa-user"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#modalShoppingCart" class="nav-link" data-toggle="modal">
+                                    <span data-cart-items="2">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul><!-- #top-btns -->
+
+					</div>
+
+				</nav>
+
+				<div id="navbarCollapse" class="collapse navbar-collapse ">
+
+					<!-- Primary Navigation
+					============================================= -->
+					<ul id="primary-menu" class="navbar-nav navbar-dark">
+						<li class="nav-item">
+							<a href="index.html" class="nav-link">Home</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">eCommerce</a>
+							<ul class="dropdown-menu">
+								<li class="nav-item">
+									<a href="shop.html" class="nav-link">Shop</a>
+								</li>
+								<li class="nav-item">
+									<a href="product.html" class="nav-link">Single Product</a>
+								</li>
+								<li class="nav-item">
+									<a href="cart.html" class="nav-link">Cart</a>
+								</li>
+								<li class="nav-item">
+									<a href="checkout.html" class="nav-link">Checkout</a>
+								</li>
+								<li class="nav-item">
+									<a href="wishlist.html" class="nav-link">My Wishlist</a>
+								</li>
+							</ul>
+						</li>
+						<li class="current nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">Pages</a>
+							<ul class="dropdown-menu">
+								<li class="current nav-item">
+									<a href="about.html" class="nav-link">About</a>
+								</li>
+								<li class="nav-item">
+									<a href="faqs.html" class="nav-link">FAQs</a>
+								</li>
+								<li class="nav-item">
+									<a href="team.html" class="nav-link">Meet the team</a>
+								</li>
+								<li class="nav-item">
+									<a href="member.html" class="nav-link">Team Member</a>
+								</li>
+								<li class="nav-item">
+									<a href="404.html" class="nav-link">404</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="contact.html" class="nav-link">Contact Us</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">Blog</a>
+							<ul class="dropdown-menu">
+								<li class="nav-item">
+									<a href="blog.html" class="nav-link">Archive</a>
+								</li>
+								<li class="nav-item">
+									<a href="single-post.html" class="nav-link">Single Post</a>
+								</li>
+							</ul>
+						</li>
+					</ul><!-- #primary-menu -->
+
+					<!-- Top Links
+					============================================= -->
+					<ul id="top-links" class="navbar-nav d-lg-none">
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
+							<ul class="dropdown-menu">
+								<li><a href="#" class="dropdown-item">EUR</a></li>
+								<li><a href="#" class="dropdown-item">AUD</a></li>
+								<li><a href="#" class="dropdown-item">GBP</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">ENG</a>
+							<ul class="dropdown-menu">
+								<li><a href="#" class="dropdown-item"><img src="images/icons/flags/french.png" alt="French"> FR</a></li>
+								<li><a href="#" class="dropdown-item"><img src="images/icons/flags/italian.png" alt="Italian"> IT</a></li>
+								<li><a href="#" class="dropdown-item"><img src="images/icons/flags/german.png" alt="German"> DE</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link"><i class="fas fa-search"></i></a>
+						</li>
+					</ul><!-- #top-links -->
+
+					<!-- Top Buttons
+					============================================= -->
+					<ul id="top-btns" class="navbar-nav flex-row justify-content-center d-lg-none">
+						<li class="nav-item">
+							<a href="#" class="nav-link"><i class="far fa-heart"></i></a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link"><i class="far fa-user"></i></a>
+						</li>
+						<li class="nav-item">
+							<a href="#modalShoppingCart" class="nav-link" data-toggle="modal">
+								<span data-cart-items="2">
+									<i class="fas fa-shopping-cart"></i>
+								</span>
+							</a>
+						</li>
+					</ul><!-- #top-btns -->
+
+				</div>
+
+			</div>
+
+		</header><!-- Header -->
+
+		<!-- Content
+		============================================= -->
+		<main id="content">
+
+			<div class="page-content">
+
+				<!-- Banner
+				============================================= -->
+				<div class="banner">
+
+					<div class="container">
+
+						<div class="row">
+							<div class="col-lg-4 d-flex align-items-center">
+
+								<div class="my-auto">
+									<div id="page-title">
+										<h5 class="sub-title text-primary text-uppercase">about us</h5>
+										<h1 class="title">About <span class="fw-normal">Us</span></h1>
+									</div>
+									<h4 class="fw-semi-light lh-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h4>
+									<h4 class="fw-semi-light lh-sm">Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</h4>
+									<h4 class="fw-semi-light lh-sm mb-lg-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h4>
+								</div>
+
+							</div>
+							<div class="col-lg-7 offset-lg-1">
+								<img src="./images/pages/about/intro.png" alt="About Image" class="img-full">
+							</div>
+						</div>
+
+					</div>
+
+				</div><!-- Banner -->
+
+				<!-- About Us
+				============================================= -->
+				<div id="aboutus" class="section">
+
+					<div class="container">
+
+						<div class="d-lg-none d-flex justify-content-center">
+							<h1 class="title mb-0">231</h1>
+							<h4 class="pt-5 fw-light ps-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+						</div>
+
+						<div class="row align-items-end">
+							<div class="col-lg-2">
+								<img src="images/shop/product2.png" alt="" class="w-100 mb-3">
+							</div>
+							<div class="col-lg-3">
+								<img src="images/shop/product3.png" alt="" class="w-100 mb-3">
+							</div>
+							<div class="col-lg-5">
+								<div class="row text-center d-lg-flex d-none">
+									<div class="col-3 offset-1 text-center my-auto">
+										<h1 class="title mb-0">231</h1>
+									</div>
+									<div class="col-7">
+										<h4 class="fw-light lh-sm pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+									</div>
+								</div>
+								<img src="images/shop/product4.png" alt="" class="w-100 mb-3">
+							</div>
+							<div class="col-lg-2">
+								<img src="images/shop/product5.png" alt="" class="w-100 mb-3">
+							</div>
+							<div class="col">
+								<img src="images/shop/product6.png" alt="" class="img-fluid">
+							</div>
+						</div>
+
+					</div>
+
+				</div><!-- #aboutus -->
+
+				<!-- Our History
+				============================================= -->
+				<div id="history" class="section pt-0">
+
+					<div class="container">
+
+						<div class="heading-block text-center">
+							<h5 class="sub-title text-primary fw-bold">OUR HISTORY</h5>
+							<h2 class="title">Our <span class="fw-normal">History</span> </h2>
+						</div>
+
+						<div class="row">
+							<div class="col-lg-3 px-2">
+								<h1 class="event-date fw-normal text-center pt-2 mb-0">2018</h1>
+								<h5 class="text-sm-start fw-light lh-sm text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
+								<img src="images/pages/about/history1.png" alt="History Image" class="w-100 mb-3 mb-lg-0">
+							</div>
+							<div class="col-lg-3 px-2 d-flex flex-lg-column flex-column-reverse">
+								<img src="images/pages/about/history2.png" alt="History Image" class="w-100 mb-3 mb-lg-0">
+								<div>
+									<h1 class="event-date fw-normal text-center pt-2 mb-0">2019</h1>
+									<h5 class="text-lg-start fw-light lh-sm text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
+								</div>
+							</div>
+							<div class="col-lg-3 px-2">
+								<h1 class="event-date fw-normal text-center pt-2 mb-0">2020</h1>
+								<h5 class="text-lg-start fw-light lh-sm text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
+								<img src="images/pages/about/history3.png" alt="History Image" class="w-100 mb-3 mb-lg-0">
+							</div>
+							<div class="col-lg-3 px-2 d-flex flex-lg-column flex-column-reverse">
+								<img src="images/pages/about/history4.png" alt="History Image" class="w-100 mb-3 mb-lg-0">
+								<div>
+									<h1 class="event-date fw-normal text-center pt-2 mb-0">2021</h1>
+									<h5 class="text-lg-start fw-light lh-sm text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div><!-- #history -->
+
+				<!-- Ads
+				============================================= -->
+				<div class="section pt-0">
+
+					<div class="container">
+
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="ads ads1">
+									<div class="ads-bg">
+										<div class="ads-bg-img" style="background-image: url(./images/ads/ads1_1.png);"></div>
+									</div>
+									<div class="ads-body">
+										<h4>BAGS</h4>
+										<h2 class="title mb-0">New<br> <span class="fw-normal title">Collection</span> </h2>
+										<h4 class="mb-0 fw-normal lh-sm">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit</h4>
+										<h2 class="text-primary mb-0 mt-4 fw-bold">$79<small>.00</small> </h2>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 pt-5 pt-lg-0">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="ads ads2">
+											<div class="ads-bg">
+												<div class="ads-bg-img" style="background-image: url(./images/ads/ads1_2.png);"></div>
+											</div>
+											<div class="ads-body">
+												<h4 class="text-white fw-bold mb-2 ">3 new items <br> of the season <br> with a discount</h4>
+												<a href="#">
+													<h5 class="text-white text-uppercase pt-2">shop now</h5>
+												</a>
+												<div class="onsale bg-white">
+													<div class="text-center align-items-center">
+														<h4 class="mb-2 text-center"><del class="fw-normal">$699.00</del></h4>
+														<h2 class="fw-bold mb-0">$499.00</h2>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 mt-md-0 mt-5">
+										<div class="ads ads3">
+											<div class="ads-bg">
+												<div class="ads-bg-img" style="background-image: url(./images/ads/ads1_3.png);"></div>
+											</div>
+											<div class="ads-body d-flex align-items-center">
+												<h1 class="fw-bold mt-n5 lh-1 mb-0">4</h1>
+												<h4 class="fw-normal ps-4">for the <br> price of 3</h4>
+											</div>
+										</div>
+										<div class="ads ads4 mt-md-3 mt-5">
+											<div class="ads-bg">
+												<img src="./images/ads/ads1_4.png" alt="Ads Image" class="img-full">
+											</div>
+											<div class="ads-body text-white">
+												<h4 class="mb-2 text-white"><del class="fw-normal">$699.00</del></h4>
+												<h2 class="fw-bold text-white mb-0">$499.<span>00</span></h2>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div><!-- Ads -->
+
+				<!-- More Featured Products
+				============================================= -->
+				<div id="more-featured-products" class="section pt-0">
+
+					<div class="container">
+
+						<div class="row">
+							<div class="col-lg-5 mb-0 order-lg-1 order-2 pt-lg-0 pt-5">
+
+								<div class="product mt-5">
+									<div class="product-image">
+										<a href="#">
+											<img src="./images/shop/top_product1.png" alt="Top Image" class="img-fluid">
+										</a>
+									</div>
+								</div>
+
+							</div>
+							<div class="col-lg-6 offset-lg-1 order-lg-2 pt-5 pt-lg-0">
+
+								<div class="heading-block mb-2 text-lg-start">
+									<h2 class="title ">Top <span class="fw-normal">rated</span></h2>
+								</div>
+
+								<div class="row pt-3">
+									<div class="col-6">
+
+										<div class="product mb-0">
+											<div class="product-image">
+												<a href="#">
+													<img src="./images/shop/top_product2.png" alt="Top Image" class="img-fluid">
+												</a>
+											</div>
+											<div class="product-details">
+												<div class="product-rating">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star empty"></i>
+													<i class="fas fa-star empty"></i>
+												</div>
+												<a href="#"><h4 class="product-title">Causal Crossbody Bags</h4></a>
+												<div class="product-categories"><a href="#">michael kors</a></div>
+												<div class="product-price">$79<small>.00</small></div>
+											</div>
+										</div>
+
+									</div>
+									<div class="col-6">
+
+										<div class="product mb-0 text-center">
+											<div class="product-image">
+												<a href="#">
+													<img src="./images/shop/top_product3.png" alt="Top Image" class="img-fluid">
+												</a>
+											</div>
+											<div class="product-details">
+												<div class="product-rating">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+												</div>
+												<a href="#"><h4 class="product-title">Causal Crossbody Bags</h4></a>
+												<div class="product-categories"><a href="#">michael kors</a></div>
+												<div class="product-price"><del>$699.00</del>$79<small>.00</small></div>
+											</div>
+											<div class="ontop">Top</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div><!-- #more-featured-products -->
+
+				<!-- Partners
+				============================================= -->
+				<div id="partners" class="section pt-0">
+
+					<div class="container">
+
+						<div class="row">
+							<div class="col-12">
+								<div class="logos">
+									<div><div class="logo-item"><img src="images/logos/logo1.png" alt="Logo Image" class="img-fluid"></div></div>
+									<div><div class="logo-item"><img src="images/logos/logo2.png" alt="Logo Image" class="img-fluid"></div></div>
+									<div><div class="logo-item"><img src="images/logos/logo3.png" alt="Logo Image" class="img-fluid"></div></div>
+									<div><div class="logo-item"><img src="images/logos/logo4.png" alt="Logo Image" class="img-fluid"></div></div>
+									<div><div class="logo-item"><img src="images/logos/logo5.png" alt="Logo Image" class="img-fluid"></div></div>
+									<div><div class="logo-item"><img src="images/logos/logo6.png" alt="Logo Image" class="img-fluid"></div></div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div><!-- Partners -->
+
+			</div>
+
+		</main><!-- #content -->
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer">
+
+			<!-- Footer Top
+			============================================= -->
+			<div id="footer-top">
+
+				<!-- Features
+				============================================= -->
+				<section id="features" class="fboxs">
+
+					<div class="container">
+
+						<div class="row service text-center">
+							<div class="col-md-4">
+
+								<div class="fbox">
+									<div class="fbox-icon">
+										<img src="images/feature_box/fbox_icon1.png" alt="Icon Image">
+									</div>
+									<div class="fbox-header">
+										<h5 class="mb-2"> Free Shipping on orders above 99$</h5>
+										<p>Lorem ipsum dolor sit amet</p>
+									</div>
+								</div>
+
+							</div>
+							<div class="col-md-4">
+
+								<div class="fbox">
+									<div class="fbox-icon">
+										<img src="images/feature_box/fbox_icon2.png" alt="Icon Image">
+									</div>
+									<div class="fbox-header">
+										<h5 class="mb-2">Gifts for regular customers</h5>
+										<p>Lorem ipsum dolor sit amet</p>
+									</div>
+								</div>
+
+							</div>
+							<div class="col-md-4">
+
+								<div class="fbox">
+									<div class="fbox-icon">
+										<img src="images/feature_box/fbox_icon3.png" alt="Icon Image">
+									</div>
+									<div class="fbox-header">
+										<h5 class="mb-2">100% money back guarantee</h5>
+										<p>Lorem ipsum dolor sit amet</p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+
+				</section><!-- #features -->
+
+			</div><!-- #footer-top -->
+
+			<!-- Footer Main
+			============================================= -->
+			<div id="footer-main">
+
+				<div class="container">
+
+					<div class="row">
+						<div class="col-md-4 col-xl-3">
+
+							<div class="widget widget-custom-html text-center text-md-start">
+								<div class="widget-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<ul class="text-white list-group">
+										<li><a href="#" target="_blank" title="phone"><span><i class="fas fa-map-marker-alt"></i></span>New York 5686 Edverano Center</a></li>
+										<li><a href="callto:1234567890" target="_blank" title="phone"><span><i class="fas fa-phone-alt"></i></span><strong class="fs-4">123-456-7890</strong></a></li>
+										<li><a href="mailto:info@gmail.com" target="_blank" title="phone"><span><i class="far fa-envelope"></i></span>info@gmail.com</a></li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-md-4 col-xl-2 offset-xl-1">
+
+							<div class="widget widget-links text-center text-md-start">
+								<h5 class="text-uppercase text-white widget-title">customer</h5>
+								<div class="wiget-content">
+									<ul>
+										<li><a href="#">How to make an order</a></li>
+										<li><a href="#">Ways of payment</a></li>
+										<li><a href="#">Delivery</a></li>
+										<li><a href="#">Purcase return</a></li>
+										<li><a href="#">Refunds</a></li>
+										<li><a href="#">Sale rules</a></li>
+										<li><a href="#">Terms of use of the trading platfom</a></li>
+										<li><a href="#">Questions and anwsers</a></li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-md-4 col-xl-2 offset-xl-1">
+
+							<div class="widget widget-links text-center text-md-start">
+								<h5 class="widget-title text-uppercase text-white">for partners</h5>
+								<div class="widget-content">
+									<ul>
+										<li><a href="#">For sellers</a></li>
+										<li><a href="#">For carriers</a></li>
+										<li><a href="#">Franchise</a></li>
+										<li><a href="#">Open the pick-up point</a></li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-xl-3">
+
+							<div class="widget widget-subscribe mt-5 mt-xl-0">
+								<h4 class="widget-title text-white text-uppercase text-center text-xl-end">Subscribe to our the free newslettr</h4>
+								<div class="widget-content">
+									<form id="subscribe-form" action="#" method="post">
+										<div class="input-group">
+											<input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control rounded-pill required email" placeholder="E-mail">
+											<div class="input-group-append">
+												<button class="btn btn-primary rounded-pill text-uppercase" type="submit">Subscribe</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+
+							<div class="widget widget-social text-center text-xl-end">
+								<h4 class="widget-title text-white text-uppercase">Follow Us</h4>
+								<div class="widget-content">
+									<ul class="social-icons d-flex align-items-center justify-content-center justify-content-xl-end">
+										<li><a href="#" target="_blank" title="Facebook"><i class="fab fa-instagram"></i></a></li>
+										<li><a href="#" target="_blank" title="Twitter"><i class="fab fa-facebook-f"></i></a></li>
+										<li><a href="#" target="_blank" title="Linkedin"><i class="fab fa-telegram-plane"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #footer-main -->
+
+			<!-- Footer bottom
+			============================================= -->
+			<div id="footer-bottom">
+
+				<div class="container">
+
+					<div class="d-flex align-items-center justify-content-between py-3">
+
+						<p id="copyrights" class="text-center mb-0">&copy; Copyrights 2023</p>
+
+						<div class="widget widget-payment mb-0">
+							<div class="widget-content">
+								<div class="payments d-flex justify-content-center">
+								<span class="payment-icon paypal"></span>
+								<span class="payment-icon mastercard"></span>
+								<span class="payment-icon visa"></span>
+								<span class="payment-icon express"></span>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</footer><!-- #footer -->
+
+	</div>
+
+	<!-- External JavaScripts
+	============================================= -->
+
+	<!-- jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js" integrity="sha512-3fMsI1vtU2e/tVxZORSEeuMhXnT9By80xlmXlsOku7hNwZSHJjwcOBpmy+uu+fyWwGCLkMvdVbHkeoXdAzBv+w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<!-- Bootstrap Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+	<!-- Slick JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<!-- Theme Scripts
+	============================================= -->
+	<script src="js/main.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
 
-              </div><!-- #top-btns -->
-            </div>  
-
-          </div>
-        </nav>
-          
-      </div>
-    </header><!-- Header -->
-    <!-- Content
-    ============================================= -->
-    <section id="content">
-
-      <div class="content-wrap">           
-        
-        <!-- Banner
-        ============================================= -->
-        <div class="container">
-
-          <div class="row">
-
-            <div class="col-lg-4 d-flex align-items-center">
-
-              <div class="my-auto">
-                <div id="page-title">
-                  <h5 class="sub-title theme-color text-uppercase">about us</h5>
-                  <h1 class="title">About <span class="fw-normal">Us</span></h1>
-                </div>
-                <h4 class="fw-semi-light lh-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h4>
-                <h4 class="fw-semi-light lh-sm">Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</h4>
-                <h4 class="fw-semi-light lh-sm mb-lg-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h4>
-              </div>
-
-            </div>
-
-            <div class="col-lg-7 offset-lg-1">
-              <img src="./images/about/about.png" alt="About Image" class="img-full">
-            </div>
-
-          </div>
-
-        </div><!-- Banner -->
-
-        <!-- About Us
-        ============================================= -->
-        <div class="section">
-
-          <div class="container">
-
-            <div class="d-lg-none d-flex justify-content-center">
-              <h1 class="title mb-0">231</h1>
-              <h4 class="pt-5 fw-light ps-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
-            </div>
-
-            <div class="row align-items-end">
-
-              <div class="col-lg-2">
-                <img src="images/shop/product2.png" alt="" class="w-100 mb-3">
-              </div>
-
-              <div class="col-lg-3">
-                <img src="images/shop/product3.png" alt="" class="w-100 mb-3">
-              </div>
-
-              <div class="col-lg-5">
-
-                <div class="row text-center d-lg-flex d-none">
-
-                  <div class="col-3 offset-1 text-center my-auto">
-                    <h1 class="title mb-0">231</h1>
-                  </div>
-
-                  <div class="col-7">
-                    <h4 class="fw-light lh-sm pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
-                  </div>
-
-                </div>
-
-                <img src="images/shop/product4.png" alt="" class="w-100 mb-3">
-
-              </div>
-
-              <div class="col-lg-2">
-                <img src="images/shop/product5.png" alt="" class="w-100 mb-3">
-              </div>
-
-              <div class="col">
-                <img src="images/shop/product6.png" alt="" class="img-fluid">
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-        <!-- Our History
-        ============================================= -->
-        <div class="section pt-0">
-
-          <div class="container">
-
-            <div class="heading-block text-center">
-              <h5 class="sub-title theme-color fw-bold">OUR HISTORY</h5>
-              <h2 class="title">Our <span class="fw-normal">History</span> </h2>
-            </div>
-
-            <div class="row">
-
-              <div class="col-lg-3 px-2">
-
-                <h1 class="event-date fw-normal text-center pt-2 mb-0">2018</h1>
-                <h5 class="text-sm-start fw-light lh-sm text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
-                <img src="images/about/history1.png" alt="History Image" class="w-100 mb-3 mb-lg-0">
-              
-              </div>
-
-              <div class="col-lg-3 px-2 d-flex flex-lg-column flex-column-reverse">
-                
-                <img src="images/about/history2.png" alt="History Image" class="w-100 mb-3 mb-lg-0">
-
-                <div>
-                  <h1 class="event-date fw-normal text-center pt-2 mb-0">2019</h1>
-                  <h5 class="text-lg-start fw-light lh-sm text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
-                </div>
-
-              </div>
-
-              <div class="col-lg-3 px-2">
-
-                <h1 class="event-date fw-normal text-center pt-2 mb-0">2020</h1>
-                <h5 class="text-lg-start fw-light lh-sm text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
-                <img src="images/about/history3.png" alt="History Image" class="w-100 mb-3 mb-lg-0">
-
-              </div>
-
-              <div class="col-lg-3 px-2 d-flex flex-lg-column flex-column-reverse">
-                <img src="images/about/history4.png" alt="History Image" class="w-100 mb-3 mb-lg-0">
-                <div>
-                  <h1 class="event-date fw-normal text-center pt-2 mb-0">2021</h1>
-                  <h5 class="text-lg-start fw-light lh-sm text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>  
-
-        <!-- Ads
-        ============================================= -->
-        <div class="section pt-0">
-
-          <div class="container">
-
-            <div class="row">
-
-              <div class="col-lg-6">
-
-                <div class="ads ads1">
-                  <div class="ads-bg">
-                    <div class="ads-bg-img" style="background-image: url(./images/ads/ads1_1.png);"></div>
-                  </div>
-                  <div class="ads-body">
-                    <h4>BAGS</h4>
-                    <h2 class="title mb-0">New<br> <span class="fw-normal title">Collection</span> </h2>
-                    <h4 class="mb-0 fw-normal lh-sm">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit</h4>
-                    <h2 class="text-primary mb-0 mt-4 fw-bold">$79<small>.00</small> </h2>
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="col-lg-6 pt-5 pt-lg-0">
-
-                <div class="row">
-
-                  <div class="col-md-6">
-
-                    <div class="ads ads2">
-                      <div class="ads-bg">
-                        <div class="ads-bg-img" style="background-image: url(./images/ads/ads1_2.png);"></div>
-                      </div>
-                      <div class="ads-body">
-                        <h4 class="text-white fw-bold mb-2 ">3 new items <br> of the season <br> with a discount</h4>
-                        <a href="#">
-                          <h5 class="text-white text-uppercase pt-2">shop now</h5>
-                        </a>
-                        <div class="onsale bg-white">
-                          <div class="text-center align-items-center">
-                            <h4 class="mb-2 text-center"><del class="fw-normal">$699.00</del></h4>
-                            <h2 class="fw-bold mb-0">$499.00</h2>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-
-                  <div class="col-md-6 mt-md-0 mt-5">
-
-                    <div class="ads ads3">
-                      <div class="ads-bg">
-                        <div class="ads-bg-img" style="background-image: url(./images/ads/ads1_3.png);"></div>
-                      </div>
-                      <div class="ads-body d-flex align-items-center">
-                        <h1 class="fw-bold mt-n5 lh-1 mb-0">4</h1>
-                        <h4 class="fw-normal ps-4">for the <br> price of 3</h4>
-                      </div>
-                    </div>
-
-                    <div class="ads ads4 mt-md-3 mt-5">
-                      <div class="ads-bg">
-                        <img src="./images/ads/ads1_4.png" alt="Ads Image" class="img-full">
-                      </div>
-                      <div class="ads-body text-white">
-                        <h4 class="mb-2 text-white"><del class="fw-normal">$699.00</del></h4>
-                        <h2 class="fw-bold text-white mb-0">$499.<span>00</span></h2>
-                      </div>
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
-  
-          </div>
-
-        </div><!-- Ads -->
-
-       <!-- More Featured Products
-        ============================================= -->
-        <div class="section pt-0">
-        
-          <div class="container">
-
-            <div class="row">
-
-              <div class="col-lg-5 mb-0 order-lg-1 order-2 pt-lg-0 pt-5">
-
-                <div class="product mt-5">
-                  <div class="product-image">
-                    <a href="#">
-                      <img src="./images/shop/top_product1.png" alt="Top Image" class="img-fluid">
-                    </a>
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="col-lg-6 offset-lg-1 order-lg-2 pt-5 pt-lg-0">
-                
-                <div class="heading-block mb-2 text-lg-start">
-                  <h2 class="title ">Top <span class="fw-normal">rated</span> </h2>
-                </div>
-
-                <div class="row pt-3">
-
-                  <div class="col-6">
-
-                    <div class="product mb-0">
-                      <div class="product-image">
-                        <a href="#">
-                          <img src="./images/shop/top_product2.png" alt="Top Image" class="img-fluid">
-                        </a>
-                      </div>
-                      <div class="product-details">
-                        <div class="product-rating">
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star empty"></i>
-                          <i class="fas fa-star empty"></i>
-                        </div>
-                        <a href="#"><h4 class="product-title">Causal Crossbody Bags</h4></a>
-                        <div class="product-categories"><a href="#">michael kors</a> </div>
-                        <div class="product-price">$79<small>.00</small></div>
-                      </div>
-                    </div>
-                    
-                  </div>  
-
-                  <div class="col-6">
-
-                    <div class="product mb-0 text-center">
-                      <div class="product-image">
-                        <a href="#">
-                          <img src="./images/shop/top_product3.png" alt="Top Image" class="img-fluid">
-                        </a>
-                      </div>
-                      <div class="product-details">
-                        <div class="product-rating">
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                        </div>
-                        <a href="#"><h4 class="product-title">Causal Crossbody Bags</h4></a>
-                        <div class="product-categories"><a href="#">michael kors</a> </div>
-                        <div class="product-price"><del>$699.00</del>$79<small>.00</small></div>
-                      </div>
-                      <div class="ontop">Top</div>
-                    </div>
-
-                  </div>
-
-                </div>
-              </div>
-            </div>
-
-          </div>  
-         
-        </div><!-- More feature product -->
-
-        <!-- Partners
-        ============================================= -->
-        <div class="section pt-0">
-
-          <div class="container">
-
-            <div class="row">
-  
-                <div class="col-12">
-  
-                    <div class="logos">
-                        <div class="logo-item"><img src="images/logos/logo1.png" alt="Logo Image" class="img-fluid"></div>
-                        <div class="logo-item"><img src="images/logos/logo2.png" alt="Logo Image" class="img-fluid"></div>
-                        <div class="logo-item"><img src="images/logos/logo3.png" alt="Logo Image" class="img-fluid"></div>
-                        <div class="logo-item"><img src="images/logos/logo4.png" alt="Logo Image" class="img-fluid"></div>
-                        <div class="logo-item"><img src="images/logos/logo5.png" alt="Logo Image" class="img-fluid"></div>
-                        <div class="logo-item"><img src="images/logos/logo6.png" alt="Logo Image" class="img-fluid"></div>
-                        <div class="logo-item"><img src="images/logos/logo1.png" alt="Logo Image" class="img-fluid"></div>
-                        <div class="logo-item"><img src="images/logos/logo2.png" alt="Logo Image" class="img-fluid"></div>
-                        <div class="logo-item"><img src="images/logos/logo3.png" alt="Logo Image" class="img-fluid"></div>
-                        <div class="logo-item"><img src="images/logos/logo4.png" alt="Logo Image" class="img-fluid"></div>
-                        <div class="logo-item"><img src="images/logos/logo5.png" alt="Logo Image" class="img-fluid"></div>
-                        <div class="logo-item"><img src="images/logos/logo6.png" alt="Logo Image" class="img-fluid"></div>
-                    </div>
-  
-                </div>                            
-  
-            </div>
-  
-          </div>
-
-        </div><!-- #partners -->
-
-        <!-- Fbox
-        ============================================= -->
-        <section class="fboxs">
-
-          <div class="container">
-
-            <div class="row service text-center">
-            
-                <div class="col-md-4">
-
-                  <div class="fbox">
-                    <div class="fbox-icon">
-                      <img src="images/feature_box/fbox_icon1.png" alt="Icon Image">
-                    </div>
-                    <div class="fbox-header">
-                      <h5 class="mb-2"> Free Shipping on orders above 99$</h5>
-                      <p>Lorem ipsum dolor sit amet</p>
-                    </div>
-                  </div>
-
-                </div>
-        
-                <div class="col-md-4 pt-5 pt-md-0">
-
-                  <div class="fbox">
-                    <div class="fbox-icon">
-                      <img src="images/feature_box/fbox_icon2.png" alt="Icon Image">
-                    </div>
-                    <div class="fbox-header">
-                      <h5 class="mb-2">Gifts for regular customers</h5>
-                      <p>Lorem ipsum dolor sit amet</p>
-                    </div>
-                  </div>
-
-                </div>
-                
-                <div class="col-md-4 pt-5 pt-md-0">
-
-                  <div class="fbox">
-                    <div class="fbox-icon">
-                      <img src="images/feature_box/fbox_icon3.png" alt="Icon Image">
-                    </div>
-                    <div class="fbox-header">
-                      <h5 class="mb-2">100% money back guarantee</h5>
-                      <p>Lorem ipsum dolor sit amet</p>
-                    </div>
-                  </div>
-
-                </div>
-  
-            </div>
-
-          </div>
-
-        </section><!-- Fbox -->
-
-      </div>
-
-    </section><!-- #content -->
-
-    <!-- Footer
-    ============================================= -->
-    <footer id="footer">
-
-      <!-- Footer Main
-      ============================================= -->
-      <div class="footer-main">
-
-        <div class="container">
-
-          <div class="row">
-
-            <div class="col-lg-4">
-
-              <div class="widget widget-custom-html text-center text-lg-start">
-                <div class="widget-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit, sed do
-                    eiusmod tempor incididunt ut labore et <br> dolore magna aliqua. 
-                  </p>
-      
-                  <ul class="text-white list-group">
-                    <li><a href="#" target="_blank" title="phone"><span><i class="fas fa-map-marker-alt"></i></span>New York 5686 Edverano Center</a></li>
-                    <li><a href="callto:1234567890" target="_blank" title="phone"><span><i class="fas fa-phone-alt"></i></span><strong class="fs-4">123-456-7890</strong></a></li>
-                    <li><a href="mailto:info@gmail.com" target="_blank" title="phone"><span><i class="far fa-envelope"></i></span>info@gmail.com</a></li>
-                  </ul>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="col-sm-6 col-lg-2">
-
-              <div class="widget widget-links text-center text-lg-start">
-                <h5 class="text-uppercase text-white widget-title">customer</h5>
-                <div class="wiget-content">
-                  <ul>
-                    <li><a href="#">How to make an order</a></li>
-                    <li><a href="#">Ways of payment</a></li>
-                    <li><a href="#">Delivery</a></li>
-                    <li><a href="#">Purcase return</a></li>
-                    <li><a href="#">Refunds</a></li>
-                    <li><a href="#">Sale rules</a></li>
-                    <li><a href="#">Terms of use of the trading platfom</a></li>
-                    <li><a href="#">Questions and anwsers</a></li>
-                  </ul>
-                </div>
-              </div>
-              
-            </div>
-            
-            <div class="col-sm-6 col-lg-2">
-
-              <div class="widget widget-links text-center text-lg-start">
-                <h5 class="widget-title text-uppercase text-white">for partners</h5>
-                <div class="widget-content">
-                  <ul>
-                    <li><a href="#">For sellers   </a></li>
-                    <li><a href="#">For carriers</a></li>
-                    <li><a href="#">Franchise</a></li>
-                    <li><a href="#">Open the pick-up point</a></li>
-                  </ul>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="col-lg-4">
-
-              <div class="widget widget-subscribe">
-                <h4 class="widget-title text-white text-uppercase text-center text-lg-start">Subscribe to our the free newslettr</h4>
-                <div class="widget-content">
-                    <form id="widget-subscribe-form" action="#" method="post">
-                        <div class="input-group">
-                            <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control rounded-pill required email" placeholder="E-mail">
-                            <div class=" input-group-append">
-                                <button class="btn btn-primary rounded-pill text-uppercase sub-btn ms-n7 px-6 fixed-top position-relative " type="submit">Subscribe</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>                                    
-              </div>  
-              
-              <div class="widget widget-social text-center text-lg-end">
-                <h4 class="widget-title text-white text-uppercase">Follow Us</h4>
-                <div class="widget-content">
-                  <ul class="social-icons d-flex align-items-center justify-content-center justify-content-lg-end">
-                    <li><a href="#" target="_blank" title="Facebook"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#" target="_blank" title="Twitter"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#" target="_blank" title="Linkedin"><i class="fab fa-telegram-plane"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-                
-            </div>      
-
-          </div>
-
-        </div>
-
-      </div><!-- #footer-main -->
-
-      <!-- Footer bottom
-      ============================================= -->
-      <div class="footer-bottom">
-
-        <div class="container">
-
-          <div class="d-flex align-items-center justify-content-between py-3">
-            
-            <p id="copyrights" class="text-center mb-0">&copy; Copyrights2021 </p>
-
-            <div class="widget widget-payment mb-0">
-              <div class="widget-content">
-                <div class="payments d-flex justify-content-center">
-                  <span class="payment-icon paypal"></span>
-                  <span class="payment-icon mastercard"></span>
-                  <span class="payment-icon visa"></span>
-                  <span class="payment-icon express"></span>
-                </div>                                    
-              </div>
-              
-            </div>
-
-          </div>
-
-        </div>
-
-      </div><!-- Footer bottom -->
-
-    </footer><!-- #footer -->
-
-  </div>
-
-  <!-- Go To Top
-  ============================================= -->
-  <div id="gotoTop" class="icon-angle-up"></div>
-
-
-  <!-- External JavaScripts
-  ============================================= -->
-  
-  <!-- Bootstrap Bundle with Popper -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>    
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js" integrity="sha512-3fMsI1vtU2e/tVxZORSEeuMhXnT9By80xlmXlsOku7hNwZSHJjwcOBpmy+uu+fyWwGCLkMvdVbHkeoXdAzBv+w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Footer Scripts
-  ============================================= -->
-  
 </body>
 </html>

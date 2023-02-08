@@ -11,22 +11,17 @@
 
 
 .logos {
-	display: flex;
-	justify-content: space-between;
-
 	.logo-item {
-		border: 1px solid #eaeaea;
+		border: 1px solid $gray-200;
 		border-radius: 0.3125rem;
-		max-width: 9.625rem;
-		height: 5.5rem;
-		width: 100%;		
-		display: flex !important;
+		height: 6.25rem;
+		width: 100%;
+		display: flex;
 		align-items: center;
 		justify-content: center;
-
-		img {
-			width: auto;
-			height: auto;
-		}
 	}
-} 
+
+	.slick-slide {
+		padding: 0 3rem;
+	}
+}

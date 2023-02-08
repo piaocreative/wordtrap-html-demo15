@@ -1,0 +1,619 @@
+<!doctype html>
+<html dir="ltr" lang="en-US">
+<head>
+	<!-- Meat Tags
+	============================================= -->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="JohnPiao" />
+
+	<!-- Fonts
+	============================================= -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Monoton&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<!-- Fontawesome
+	============================================= -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" type="text/css" />
+
+	<!-- Slick
+	============================================= -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+
+	<!-- Document Title
+	============================================= -->
+	<title>Demo15 | Wordtrap</title>
+</head>
+<body id="cart-page">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Header
+		============================================= -->
+		<header id="header">
+
+			<div id="header-content">
+
+				<nav class="navbar navbar-light">
+
+					<div class="container-fluid px-0">
+
+						<!-- Logo
+						============================================= -->
+						<a href="index.html" id="logo" class="navbar-brand me-lg-auto " data-dark-logo="images/logo.png">
+							<img src="images/logo.png" alt="Wordtrap Logo">
+						</a><!-- #logo -->
+
+						<!-- Navbar Toggler
+						============================================= -->
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+						<!-- Top Links
+                        ============================================= -->
+                        <ul id="top-links" class="nav align-items-center d-none d-lg-flex">
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item">EUR</a></li>
+                                    <li><a href="#" class="dropdown-item">AUD</a></li>
+                                    <li><a href="#" class="dropdown-item">GBP</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">ENG</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/french.png" alt="French"> FR</a></li>
+                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/italian.png" alt="Italian"> IT</a></li>
+                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/german.png" alt="German"> DE</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
+                            </li>
+                        </ul><!-- #top-links -->
+
+						<!-- Top Buttons
+                        ============================================= -->
+                        <ul id="top-btns" class="nav ms-auto d-none d-lg-flex align-items-center">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="far fa-heart"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="far fa-user"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#modalShoppingCart" class="nav-link" data-toggle="modal">
+                                    <span data-cart-items="2">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul><!-- #top-btns -->
+
+					</div>
+
+				</nav>
+
+				<div id="navbarCollapse" class="collapse navbar-collapse ">
+
+					<!-- Primary Navigation
+					============================================= -->
+					<ul id="primary-menu" class="navbar-nav navbar-dark">
+						<li class="nav-item">
+							<a href="index.html" class="nav-link">Home</a>
+						</li>
+						<li class="current nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">eCommerce</a>
+							<ul class="dropdown-menu">
+								<li class="nav-item">
+									<a href="shop.html" class="nav-link">Shop</a>
+								</li>
+								<li class="nav-item">
+									<a href="product.html" class="nav-link">Single Product</a>
+								</li>
+								<li class="current nav-item">
+									<a href="cart.html" class="nav-link">Cart</a>
+								</li>
+								<li class="nav-item">
+									<a href="checkout.html" class="nav-link">Checkout</a>
+								</li>
+								<li class="nav-item">
+									<a href="wishlist.html" class="nav-link">My Wishlist</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">Pages</a>
+							<ul class="dropdown-menu">
+								<li class="nav-item">
+									<a href="about.html" class="nav-link">About</a>
+								</li>
+								<li class="nav-item">
+									<a href="faqs.html" class="nav-link">FAQs</a>
+								</li>
+								<li class="nav-item">
+									<a href="team.html" class="nav-link">Meet the team</a>
+								</li>
+								<li class="nav-item">
+									<a href="member.html" class="nav-link">Team Member</a>
+								</li>
+								<li class="nav-item">
+									<a href="404.html" class="nav-link">404</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="contact.html" class="nav-link">Contact Us</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">Blog</a>
+							<ul class="dropdown-menu">
+								<li class="nav-item">
+									<a href="blog.html" class="nav-link">Archive</a>
+								</li>
+								<li class="nav-item">
+									<a href="single-post.html" class="nav-link">Single Post</a>
+								</li>
+							</ul>
+						</li>
+					</ul><!-- #primary-menu -->
+
+					<!-- Top Links
+					============================================= -->
+					<ul id="top-links" class="navbar-nav d-lg-none">
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
+							<ul class="dropdown-menu">
+								<li><a href="#" class="dropdown-item">EUR</a></li>
+								<li><a href="#" class="dropdown-item">AUD</a></li>
+								<li><a href="#" class="dropdown-item">GBP</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">ENG</a>
+							<ul class="dropdown-menu">
+								<li><a href="#" class="dropdown-item"><img src="images/icons/flags/french.png" alt="French"> FR</a></li>
+								<li><a href="#" class="dropdown-item"><img src="images/icons/flags/italian.png" alt="Italian"> IT</a></li>
+								<li><a href="#" class="dropdown-item"><img src="images/icons/flags/german.png" alt="German"> DE</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link"><i class="fas fa-search"></i></a>
+						</li>
+					</ul><!-- #top-links -->
+
+					<!-- Top Buttons
+					============================================= -->
+					<ul id="top-btns" class="navbar-nav flex-row justify-content-center d-lg-none">
+						<li class="nav-item">
+							<a href="#" class="nav-link"><i class="far fa-heart"></i></a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link"><i class="far fa-user"></i></a>
+						</li>
+						<li class="nav-item">
+							<a href="#modalShoppingCart" class="nav-link" data-toggle="modal">
+								<span data-cart-items="2">
+									<i class="fas fa-shopping-cart"></i>
+								</span>
+							</a>
+						</li>
+					</ul><!-- #top-btns -->
+
+				</div>
+
+			</div>
+
+		</header><!-- Header -->
+
+		<!-- Content
+		============================================= -->
+		<main id="content">
+
+			<div class="page-content">
+
+				<div class="section pt-0">
+
+					<div class="container">
+
+						<div id="page-title">
+							<h1 class="title">Shopping Cart</h1>
+						</div>
+
+						<div class="row">
+							<div class="col-lg-8">
+								<form class="cart-form" action="cart.html" method="post">
+									<div class="table-responsive">
+										<table class="table shop-table" cellspacing="0">
+											<thead>
+												<tr>
+													<th>Image</th>
+													<th>Product</th>
+													<th>Price</th>
+													<th>Quantity</th>
+													<th>Subtotal</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr class="cart-item">
+													<td class="product-thumbnail">
+														<a href="product.html">
+															<img width="100" height="100" src="./images/shop/featured_product1.png" alt="Causal Crossbody Bags" class="img-fluid">
+														</a>
+													</td>
+													<td class="product-name">
+														<a href="product.html">Causal Crossbody Bags</a>
+														<br />
+														<a href="#" class="product-wishlist">Wishlist</a>
+														<a href="#" class="product-delete">Delete</a>
+													</td>
+													<td class="product-price">$79.00</td>
+													<td class="product-quantity">
+														<div class="quantity input-group">
+															<div class="input-group-prepend">
+																<button class="btn btn-sm" id="minus-btn"><i class="fa fa-minus"></i></button>
+															</div>
+															<input type="number" class="form-control qty" value="1" min="1" disabled>
+															<div class="input-group-prepend">
+																<button class="btn btn-sm" id="plus-btn"><i class="fa fa-plus"></i></button>
+															</div>
+														</div>
+													</td>
+													<td class="product-subtotal">
+														$79.00
+													</td>
+												</tr>
+												<tr class="cart-item">
+													<td class="product-thumbnail">
+														<a href="product.html">
+															<img width="100" height="100" src="./images/shop/featured_product2.png" alt="Causal Crossbody Bags" class="img-fluid">
+														</a>
+													</td>
+													<td class="product-name">
+														<a href="product.html">Causal Crossbody Bags</a>
+														<br />
+														<a href="#" class="product-wishlist">Wishlist</a>
+														<a href="#" class="product-delete">Delete</a>
+													</td>
+													<td class="product-price">$79.00</td>
+													<td class="product-quantity">
+														<div class="quantity input-group">
+															<div class="input-group-prepend">
+																<button class="btn btn-sm" id="minus-btn"><i class="fa fa-minus"></i></button>
+															</div>
+															<input type="number" class="form-control qty" value="1" min="1" disabled>
+															<div class="input-group-prepend">
+																<button class="btn btn-sm" id="plus-btn"><i class="fa fa-plus"></i></button>
+															</div>
+														</div>
+													</td>
+													<td class="product-subtotal">
+														$79.00
+													</td>
+												</tr>
+												<tr class="cart-item">
+													<td class="product-thumbnail">
+														<a href="product.html">
+															<img width="100" height="100" src="./images/shop/featured_product3.png" alt="Causal Crossbody Bags" class="img-fluid">
+														</a>
+													</td>
+													<td class="product-name">
+														<a href="product.html">Causal Crossbody Bags</a>
+														<br />
+														<a href="#" class="product-wishlist">Wishlist</a>
+														<a href="#" class="product-delete">Delete</a>
+													</td>
+													<td class="product-price">$79.00</td>
+													<td class="product-quantity">
+														<div class="quantity input-group">
+															<div class="input-group-prepend">
+																<button class="btn btn-sm" id="minus-btn"><i class="fa fa-minus"></i></button>
+															</div>
+															<input type="number" class="form-control qty" value="1" min="1" disabled>
+															<div class="input-group-prepend">
+																<button class="btn btn-sm" id="plus-btn"><i class="fa fa-plus"></i></button>
+															</div>
+														</div>
+													</td>
+													<td class="product-subtotal">
+														$237.00
+													</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="5" class="actions">
+														<div class="d-md-flex flex-wrap justify-content-between">
+															<div class="coupon row">
+																<div class="col-6 col-md-auto">
+																	<input type="text" name="coupon_code" class="form-control" id="coupon_code" value="" placeholder="Coupon code">
+																</div>
+																<div class="col-6 col-md-auto">
+																	<button type="button" class="btn btn-secondary" name="apply_coupon">Apply coupon</button>
+																</div>
+															</div>
+															<button type="submit" class="btn btn-secondary" name="update_cart" value="Update cart">Update cart</button>
+														</div>
+													</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</form>
+							</div>
+							<div class="col-lg-4">
+								<div class="cart-totals">
+
+									<h3>Cart totals</h3>
+
+									<table cellspacing="0" class="table shop-table">
+										<tbody>
+											<tr class="cart-subtotal">
+												<th>Subtotal</th>
+												<td>$237.00</td>
+											</tr>
+											<tr class="shipping">
+												<td colspan="2">
+													<p class="text-uppercase mb-1">Shipping</p>
+													<div class="shipping-method">
+														<div class="form-check">
+															<input class="form-check-input" type="radio" name="shipping_method" id="shipping_method_free" checked>
+															<label class="form-check-label" for="shipping_method_free">Free Shipping</label>
+														</div>
+														<div class="form-check">
+															<input class="form-check-input" type="radio" name="shipping_method" id="shipping_method_local">
+															<label class="form-check-label" for="shipping_method_local">Local Pickup</label>
+														</div>
+														<div class="form-check">
+															<input class="form-check-input" type="radio" name="shipping_method" id="shipping_method_flat">
+															<label class="form-check-label" for="shipping_method_flat">Flat rate: $5.00</label>
+														</div>
+													</div>
+													<div class="shipping-destination mt-3">
+														<p class="mb-1">Shipping to CA</p>
+														<div class="mb-3">
+															<input type="text" value="" class="form-control" name="shipping_country" id="shipping_country" required="" placeholder="Country / Region">
+														</div>
+														<div class="mb-3">
+															<input type="text" value="" class="form-control" name="shipping_street" id="shipping_street" required="" placeholder="Street address">
+														</div>
+														<div class="mb-3">
+															<input type="text" value="" class="form-control" name="shipping_city" id="shipping_city" required="" placeholder="Town / City">
+														</div>
+														<div class="mb-3">
+															<input type="text" value="" class="form-control" name="shipping_country" id="shipping_country" required="" placeholder="Postal Code">
+														</div>
+														<button type="button" class="btn btn-secondary" name="update_totals">Update Totals</button>
+													</div>
+												</td>
+											</tr>
+											<tr class="order-total">
+												<th>Total</th>
+												<td>$237.00</td>
+											</tr>
+										</tbody>
+									</table>
+									<a href="checkout.html" class="btn btn-primary">Proceed to checkout</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div><!-- .page-content -->
+
+		</main><!-- #content -->
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer">
+
+			<!-- Footer Top
+			============================================= -->
+			<div id="footer-top">
+
+				<!-- Features
+				============================================= -->
+				<section id="features" class="fboxs">
+
+					<div class="container">
+
+						<div class="row service text-center">
+							<div class="col-md-4">
+
+								<div class="fbox">
+									<div class="fbox-icon">
+										<img src="images/feature_box/fbox_icon1.png" alt="Icon Image">
+									</div>
+									<div class="fbox-header">
+										<h5 class="mb-2"> Free Shipping on orders above 99$</h5>
+										<p>Lorem ipsum dolor sit amet</p>
+									</div>
+								</div>
+
+							</div>
+							<div class="col-md-4">
+
+								<div class="fbox">
+									<div class="fbox-icon">
+										<img src="images/feature_box/fbox_icon2.png" alt="Icon Image">
+									</div>
+									<div class="fbox-header">
+										<h5 class="mb-2">Gifts for regular customers</h5>
+										<p>Lorem ipsum dolor sit amet</p>
+									</div>
+								</div>
+
+							</div>
+							<div class="col-md-4">
+
+								<div class="fbox">
+									<div class="fbox-icon">
+										<img src="images/feature_box/fbox_icon3.png" alt="Icon Image">
+									</div>
+									<div class="fbox-header">
+										<h5 class="mb-2">100% money back guarantee</h5>
+										<p>Lorem ipsum dolor sit amet</p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+
+				</section><!-- #features -->
+
+			</div><!-- #footer-top -->
+
+			<!-- Footer Main
+			============================================= -->
+			<div id="footer-main">
+
+				<div class="container">
+
+					<div class="row">
+						<div class="col-md-4 col-xl-3">
+
+							<div class="widget widget-custom-html text-center text-md-start">
+								<div class="widget-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<ul class="text-white list-group">
+										<li><a href="#" target="_blank" title="phone"><span><i class="fas fa-map-marker-alt"></i></span>New York 5686 Edverano Center</a></li>
+										<li><a href="callto:1234567890" target="_blank" title="phone"><span><i class="fas fa-phone-alt"></i></span><strong class="fs-4">123-456-7890</strong></a></li>
+										<li><a href="mailto:info@gmail.com" target="_blank" title="phone"><span><i class="far fa-envelope"></i></span>info@gmail.com</a></li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-md-4 col-xl-2 offset-xl-1">
+
+							<div class="widget widget-links text-center text-md-start">
+								<h5 class="text-uppercase text-white widget-title">customer</h5>
+								<div class="wiget-content">
+									<ul>
+										<li><a href="#">How to make an order</a></li>
+										<li><a href="#">Ways of payment</a></li>
+										<li><a href="#">Delivery</a></li>
+										<li><a href="#">Purcase return</a></li>
+										<li><a href="#">Refunds</a></li>
+										<li><a href="#">Sale rules</a></li>
+										<li><a href="#">Terms of use of the trading platfom</a></li>
+										<li><a href="#">Questions and anwsers</a></li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-md-4 col-xl-2 offset-xl-1">
+
+							<div class="widget widget-links text-center text-md-start">
+								<h5 class="widget-title text-uppercase text-white">for partners</h5>
+								<div class="widget-content">
+									<ul>
+										<li><a href="#">For sellers</a></li>
+										<li><a href="#">For carriers</a></li>
+										<li><a href="#">Franchise</a></li>
+										<li><a href="#">Open the pick-up point</a></li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-xl-3">
+
+							<div class="widget widget-subscribe mt-5 mt-xl-0">
+								<h4 class="widget-title text-white text-uppercase text-center text-xl-end">Subscribe to our the free newslettr</h4>
+								<div class="widget-content">
+									<form id="subscribe-form" action="#" method="post">
+										<div class="input-group">
+											<input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control rounded-pill required email" placeholder="E-mail">
+											<div class="input-group-append">
+												<button class="btn btn-primary rounded-pill text-uppercase" type="submit">Subscribe</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+
+							<div class="widget widget-social text-center text-xl-end">
+								<h4 class="widget-title text-white text-uppercase">Follow Us</h4>
+								<div class="widget-content">
+									<ul class="social-icons d-flex align-items-center justify-content-center justify-content-xl-end">
+										<li><a href="#" target="_blank" title="Facebook"><i class="fab fa-instagram"></i></a></li>
+										<li><a href="#" target="_blank" title="Twitter"><i class="fab fa-facebook-f"></i></a></li>
+										<li><a href="#" target="_blank" title="Linkedin"><i class="fab fa-telegram-plane"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #footer-main -->
+
+			<!-- Footer bottom
+			============================================= -->
+			<div id="footer-bottom">
+
+				<div class="container">
+
+					<div class="d-flex align-items-center justify-content-between py-3">
+
+						<p id="copyrights" class="text-center mb-0">&copy; Copyrights 2023</p>
+
+						<div class="widget widget-payment mb-0">
+							<div class="widget-content">
+								<div class="payments d-flex justify-content-center">
+								<span class="payment-icon paypal"></span>
+								<span class="payment-icon mastercard"></span>
+								<span class="payment-icon visa"></span>
+								<span class="payment-icon express"></span>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</footer><!-- #footer -->
+
+	</div>
+
+	<!-- External JavaScripts
+	============================================= -->
+
+	<!-- jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<!-- Bootstrap Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+	<!-- Slick JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<!-- Theme JS -->
+	<script src="js/main.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+
+</body>
+</html>

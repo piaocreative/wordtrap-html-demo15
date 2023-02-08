@@ -16,8 +16,105 @@
 -----------------------------------------------------------------*/
 
 
-#banner {
-    background-repeat: no-repeat;
-    background-size: 100%;
+.banner {
     position: relative;
+
+	&#home-banner {
+		#banner-slider {
+			position: initial;
+
+			.banner-slide {
+				img {
+					min-height: 25rem;
+					object-fit: cover;
+					object-position: center;
+				}
+
+				.btn {
+					border-color: $white;
+					color: $white;
+					position: absolute;
+					left: 50%;
+					bottom: 10%;
+
+					@include media-breakpoint-up(lg) {
+						bottom: 16%;
+					}
+
+					@include translateX(-50%);
+
+					&:hover {
+						background-color: $white;
+						color: $theme-color;
+					}
+				}
+			}
+
+			.slick-arrow {
+				background-color: transparent;
+				background-size: 100%;
+				background-repeat: no-repeat;
+				border: none;
+				display: block;
+				width: 12px;
+				height: 67px;
+				position: absolute;
+				right: 5.25rem;
+				left: auto;
+				padding: 0;
+				z-index: 2;
+
+				@include translate3d(0, 0, 0);
+
+				&::before {
+					display: none;
+				}
+
+				&.slick-prev {
+					background-image: url(../images/banner/banner-arrow-prev.png);
+					top: 5.375rem;
+					bottom: auto;
+				}
+
+				&.slick-next {
+					background-image: url(../images/banner/banner-arrow-next.png);
+					bottom: 5.375rem;
+					top: auto;
+				}
+			}
+
+			.slick-dots {
+				display: flex;
+				flex-direction: column;
+				right: 4.25rem;
+				left: auto;
+				bottom: auto;
+				top: 50%;
+				width: auto;
+
+				@include translateY(-50%);
+
+				li {
+					padding: 3.5rem 0;
+
+					a {
+						color: $gray-600;
+						font-family: $body-font;
+						font-size: 0.875rem;
+						line-height: 1;
+
+						&:hover {
+							color: $theme-color;
+						}
+					}
+
+					&.slick-active {
+						a {
+							color: $theme-color;
+						}
+					}
+				}
+			}
+		}
+	}
 }

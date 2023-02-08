@@ -16,19 +16,24 @@
 
 
 #copyrights {
-	color: #5c5b58;
+	color: $gray-500;
 	font-size: 0.93rem;
-	font-weight: 400;	
-	z-index: 1;	
+	font-weight: 400;
+	z-index: 1;
 }
 
-.footer-main {
-	background-color: #1c1c1c;
+#footer-top {
+	background-color: $dark;
+	padding-top: 4.54rem;
+	padding-bottom: 5.2rem;
+}
+
+#footer-main {
+	background-color: $gray-700;
 	padding-top: 6.875rem;
 	padding-bottom: 4.325rem;
 }
 
-.footer-bottom {
-	background-color: #282828;
+#footer-bottom {
+	background-color: $dark;
 }
-

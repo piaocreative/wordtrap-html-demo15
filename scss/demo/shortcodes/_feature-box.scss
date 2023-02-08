@@ -11,11 +11,13 @@
 
 
 .fboxs{
-	background-color: #282828;
-	padding-top: 4.54rem;
-	padding-bottom: 5.2rem;
-
 	.fbox {
+		margin-bottom: 1.875rem;
+
+		@include media-breakpoint-up(md) {
+			margin-bottom: 0;
+		}
+
 		.fbox-icon {
 			img {
 				margin-bottom: $spacer;
@@ -25,19 +27,16 @@
 
 		.fbox-header {
 			h5 {
-				color: white;
+				color: $white;
 				font-weight: 400;
-				font-family:$body-font;
+				font-family: $body-font;
 			}
-		
+
 			p {
 				font-weight: 300;
 				margin-bottom: 0;
-				color: #5c5c5c;
+				color: $gray-500;
 			}
 		}
-			
 	}
 }
-
-

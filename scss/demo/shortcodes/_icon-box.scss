@@ -11,7 +11,7 @@
 
 
 .icon-box {
-  display: flex;
+  	display: flex;
 	align-items: center;
 	margin-bottom: 1.75rem;
 
@@ -32,21 +32,19 @@
 
 		h4 {
 			font-weight: 350;
-			color: #7c7b7a;
+			color: $gray-300;
 			margin-bottom: 0;
-			width: 9rem;			
+			width: 9rem;
 		}
+
 		span {
-			color: $heading-color;
+			color: $headings-color;
 			font-size: 1rem;
 			font-weight: 350;
-			
-		}
-		span:hover {
-			color: $theme-color;
+
+			&:hover {
+				color: $theme-color;
+			}
 		}
 	}
-	
-
-	
 }

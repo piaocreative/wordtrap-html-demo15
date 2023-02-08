@@ -1,0 +1,886 @@
+<!doctype html>
+<html dir="ltr" lang="en-US">
+<head>
+	<!-- Meat Tags
+	============================================= -->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="JohnPiao" />
+
+	<!-- Fonts
+	============================================= -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Monoton&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<!-- Fontawesome
+	============================================= -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" type="text/css" />
+
+	<!-- Slick
+	============================================= -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+
+	<!-- Document Title
+	============================================= -->
+	<title>Demo15 | Wordtrap</title>
+</head>
+<body id="single-product-page">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Header
+		============================================= -->
+		<header id="header">
+
+			<div id="header-content">
+
+				<nav class="navbar navbar-light">
+
+					<div class="container-fluid px-0">
+
+						<!-- Logo
+						============================================= -->
+						<a href="index.html" id="logo" class="navbar-brand me-lg-auto " data-dark-logo="images/logo.png">
+							<img src="images/logo.png" alt="Wordtrap Logo">
+						</a><!-- #logo -->
+
+						<!-- Navbar Toggler
+						============================================= -->
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+						<!-- Top Links
+                        ============================================= -->
+                        <ul id="top-links" class="nav align-items-center d-none d-lg-flex">
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item">EUR</a></li>
+                                    <li><a href="#" class="dropdown-item">AUD</a></li>
+                                    <li><a href="#" class="dropdown-item">GBP</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">ENG</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/french.png" alt="French"> FR</a></li>
+                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/italian.png" alt="Italian"> IT</a></li>
+                                    <li><a href="#" class="dropdown-item"><img src="images/icons/flags/german.png" alt="German"> DE</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
+                            </li>
+                        </ul><!-- #top-links -->
+
+						<!-- Top Buttons
+                        ============================================= -->
+                        <ul id="top-btns" class="nav ms-auto d-none d-lg-flex align-items-center">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="far fa-heart"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="far fa-user"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#modalShoppingCart" class="nav-link" data-toggle="modal">
+                                    <span data-cart-items="2">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul><!-- #top-btns -->
+
+					</div>
+
+				</nav>
+
+				<div id="navbarCollapse" class="collapse navbar-collapse ">
+
+					<!-- Primary Navigation
+					============================================= -->
+					<ul id="primary-menu" class="navbar-nav navbar-dark">
+						<li class="nav-item">
+							<a href="index.html" class="nav-link">Home</a>
+						</li>
+						<li class="current nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">eCommerce</a>
+							<ul class="dropdown-menu">
+								<li class="nav-item">
+									<a href="shop.html" class="nav-link">Shop</a>
+								</li>
+								<li class="current nav-item">
+									<a href="product.html" class="nav-link">Single Product</a>
+								</li>
+								<li class="nav-item">
+									<a href="cart.html" class="nav-link">Cart</a>
+								</li>
+								<li class="nav-item">
+									<a href="checkout.html" class="nav-link">Checkout</a>
+								</li>
+								<li class="nav-item">
+									<a href="wishlist.html" class="nav-link">My Wishlist</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">Pages</a>
+							<ul class="dropdown-menu">
+								<li class="nav-item">
+									<a href="about.html" class="nav-link">About</a>
+								</li>
+								<li class="nav-item">
+									<a href="faqs.html" class="nav-link">FAQs</a>
+								</li>
+								<li class="nav-item">
+									<a href="team.html" class="nav-link">Meet the team</a>
+								</li>
+								<li class="nav-item">
+									<a href="member.html" class="nav-link">Team Member</a>
+								</li>
+								<li class="nav-item">
+									<a href="404.html" class="nav-link">404</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="contact.html" class="nav-link">Contact Us</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">Blog</a>
+							<ul class="dropdown-menu">
+								<li class="nav-item">
+									<a href="blog.html" class="nav-link">Archive</a>
+								</li>
+								<li class="nav-item">
+									<a href="single-post.html" class="nav-link">Single Post</a>
+								</li>
+							</ul>
+						</li>
+					</ul><!-- #primary-menu -->
+
+					<!-- Top Links
+					============================================= -->
+					<ul id="top-links" class="navbar-nav d-lg-none">
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
+							<ul class="dropdown-menu">
+								<li><a href="#" class="dropdown-item">EUR</a></li>
+								<li><a href="#" class="dropdown-item">AUD</a></li>
+								<li><a href="#" class="dropdown-item">GBP</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">ENG</a>
+							<ul class="dropdown-menu">
+								<li><a href="#" class="dropdown-item"><img src="images/icons/flags/french.png" alt="French"> FR</a></li>
+								<li><a href="#" class="dropdown-item"><img src="images/icons/flags/italian.png" alt="Italian"> IT</a></li>
+								<li><a href="#" class="dropdown-item"><img src="images/icons/flags/german.png" alt="German"> DE</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link"><i class="fas fa-search"></i></a>
+						</li>
+					</ul><!-- #top-links -->
+
+					<!-- Top Buttons
+					============================================= -->
+					<ul id="top-btns" class="navbar-nav flex-row justify-content-center d-lg-none">
+						<li class="nav-item">
+							<a href="#" class="nav-link"><i class="far fa-heart"></i></a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link"><i class="far fa-user"></i></a>
+						</li>
+						<li class="nav-item">
+							<a href="#modalShoppingCart" class="nav-link" data-toggle="modal">
+								<span data-cart-items="2">
+									<i class="fas fa-shopping-cart"></i>
+								</span>
+							</a>
+						</li>
+					</ul><!-- #top-btns -->
+
+				</div>
+
+			</div>
+
+		</header><!-- Header -->
+
+		<!-- Content
+		============================================= -->
+		<main id="content">
+
+			<div class="page-content">
+
+				<div id="product_1" class="section">
+
+					<div class="container">
+
+						<div class="product single-product">
+							<div class="row">
+								<div class="col-12 col-lg-6">
+
+									<!-- Product Thumbnail
+									============================================= -->
+									<div class="product-thumbnail">
+										<img src="./images/shop/top_product1.png" alt="Dress" class="img-fluid w-100">
+										<ul class="product-gallery">
+											<li class="active">
+												<a href="#"><img src="./images/shop/top_product1.png" alt="Product Image" class="img-fluid w-100"></a>
+											</li>
+											<li>
+												<a href="#"><img src="./images/shop/best_sell3.png" alt="Product Image" class="img-fluid w-100"></a>
+											</li>
+										</ul>
+										<div class="onsale">Sale</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-6">
+
+									<!-- Product Summary
+									============================================= -->
+									<div class="product-summary">
+										<h1 class="product-title">Sweater</h1>
+										<div class="product-reviews">
+											<div class="product-rating me-3">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+											</div>
+											<span>2 Customer Reviews</span>
+										</div>
+										<div class="product-price"><del>$699.00</del>$79<small>.00</small></div>
+										<div class="product-variations">
+											<div class="product-filters mb-3">
+												<h4 class="filter-title text-uppercase">Color</h4>
+												<div class="filter-content">
+													<div class="product-filter-color">
+														<ul>
+															<li>
+																<input id="color_3d98f4" type="radio" class="filter-color" name="filter_color" value="#3d98f4" style="background-color: #3d98f4;" checked>
+															</li>
+															<li>
+																<input id="color_ebf4fe" type="radio" class="filter-color" name="filter_color" value="#ebf4fe" style="background-color: #ebf4fe;">
+															</li>
+															<li>
+																<input id="color_f5f5f5" type="radio" class="filter-color" name="filter_color" value="#f5f5f5" style="background-color: #f5f5f5;">
+															</li>
+															<li>
+																<input id="color_373737" type="radio" class="filter-color" name="filter_color" value="#373737" style="background-color: #373737;">
+															</li>
+															<li>
+																<input id="color_dcdcdc" type="radio" class="filter-color" name="filter_color" value="#dcdcdc" style="background-color: #dcdcdc;">
+															</li>
+															<li>
+																<input id="color_ffffff" type="radio" class="filter-color" name="filter_color" value="#ffffff" style="background-color: #ffffff;">
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="product-filters mb-3">
+												<h4 class="filter-title text-uppercase">Size</h4>
+												<div class="filter-content">
+													<div class="product-filter-size">
+														<ul>
+															<li>
+																<input id="size_xl" type="radio" class="filter-size" name="filter_size" value="XL" checked>
+																<label for="size_xl">XL</label>
+															</li>
+															<li>
+																<input id="size_l" type="radio" class="filter-size" name="filter_size" value="L">
+																<label for="size_l">L</label>
+															</li>
+															<li>
+																<input id="size_m" type="radio" class="filter-size" name="filter_size" value="M">
+																<label for="size_m">M</label>
+															</li>
+															<li>
+																<input id="size_s" type="radio" class="filter-size" name="filter_size" value="S">
+																<label for="size_s">S</label>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<form class="cart" action="/" method="post" enctype="multipart/form-data">
+											<div class="quantity input-group">
+												<div class="input-group-prepend">
+													<button class="btn btn-sm text-primary" id="minus-btn"><i class="fa fa-minus"></i></button>
+												</div>
+												<input type="number" class="form-control qty" value="1" min="1" disabled>
+												<div class="input-group-prepend">
+													<button class="btn btn-sm text-primary" id="plus-btn"><i class="fa fa-plus"></i></button>
+												</div>
+											</div>
+											<input type="submit" name="add-to-cart" value="Add to cart" class="btn btn-primary text-uppercase">
+										</form>
+										<div class="product-meta mb-3">
+											<span class="product-categories">Categories: <a href="#">Fashion</a></span>
+											<span class="product-sku">SKU: <a href="#">6454613612</a></span>
+											<span class="product-tags">Tags: <a href="#">Clothes</a>, <a href="#">Sweater</a></span>
+										</div>
+										<div class="product-description">
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+										</div>
+										<ul class="social-icons">
+                                            <li><a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#" target="_blank" title="Youtube"><i class="fab fa-youtube"></i></a></li>
+                                            <li><a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href="#" target="_blank" title="Google+"><i class="fab fa-google-plus-g"></i></a></li>
+                                            <li><a href="#" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                                        </ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div><!-- #proudct_{id} -->
+
+				<!-- Product More Information
+				============================================= -->
+				<div class="product-more-info section bg-light">
+
+					<div class="container">
+
+						<nav>
+							<div class="nav nav-pills" id="nav-tab" role="tablist">
+								<button class="nav-link active" id="nav-desc-tab" data-bs-toggle="tab" data-bs-target="#nav-desc" type="button" role="tab" aria-controls="nav-desc" aria-selected="true">Description</button>
+								<button class="nav-link" id="nav-additional-info-tab" data-bs-toggle="tab" data-bs-target="#nav-additional-info" type="button" role="tab" aria-controls="nav-additional-info" aria-selected="false">Additional Information</button>
+								<button class="nav-link" id="nav-reviews-tab" data-bs-toggle="tab" data-bs-target="#nav-reviews" type="button" role="tab" aria-controls="nav-reviews" aria-selected="false">Reviews <span>2</span></button>
+							</div>
+						</nav>
+						<div class="tab-content" id="nav-tabContent">
+							<div class="tab-pane fade show active" id="nav-desc" role="tabpanel" aria-labelledby="nav-desc-tab" tabindex="0">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+								<ul>
+									<li>Any Product types that You want – Simple, Configurable</li>
+									<li>Downloadable/Digital Products, Virtual Products</li>
+									<li>Inventory Management with Backordered items</li>
+								</ul>
+								<br>
+								<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+							</div>
+							<div class="tab-pane fade" id="nav-additional-info" role="tabpanel" aria-labelledby="nav-additional-info-tab" tabindex="0">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+							</div>
+							<div class="tab-pane fade" id="nav-reviews" role="tabpanel" aria-labelledby="nav-reviews-tab" tabindex="0">
+
+								<!-- Reviews
+								============================================= -->
+								<div id="reviews">
+
+									<!-- Comments
+									============================================= -->
+									<div id="comments">
+										<h2 class="reviews-title">Reviews<span>2</span></h2>
+										<ul class="comment-list">
+											<li class="review" id="comment-8">
+												<div class="comment-container">
+													<img alt="Olga" src="images/avatar/olga.png" class="avatar" height="48" width="48">
+													<div class="comment-text">
+														<p class="meta">
+															<strong class="review-author">Olga</strong>
+															<time class="review-date" datetime="2022-12-08T09:31:24-05:00">19 April 2021</time>
+														</p>
+														<div class="rating">
+															<div class="star-rating">
+																<i class="fas fa-star"></i>
+																<i class="fas fa-star"></i>
+																<i class="fas fa-star"></i>
+																<i class="fas fa-star"></i>
+																<i class="fas fa-star"></i>
+															</div>
+														</div>
+														<div class="description">
+															<p>Thick material, color as pictured, no smell! The seams are straight, the threads do not stick out!</p>
+														</div>
+													</div>
+												</div>
+											</li><!-- #comment-## -->
+											<li class="review" id="comment-9">
+												<div class="comment-container">
+													<img alt="Olga" src="images/avatar/anna.png" class="avatar" height="48" width="48">
+													<div class="comment-text">
+														<p class="meta">
+															<strong class="review-author">Anna</strong>
+															<time class="review-date" datetime="2022-12-08T09:31:24-05:00">7 June 2021</time>
+														</p>
+														<div class="rating">
+															<div class="star-rating">
+																<i class="fas fa-star"></i>
+																<i class="fas fa-star"></i>
+																<i class="fas fa-star"></i>
+																<i class="fas fa-star"></i>
+																<i class="fas fa-star"></i>
+															</div>
+														</div>
+														<div class="description">
+															<p>Excellent sports leggings. For my height, 172 is a little short</p>
+														</div>
+													</div>
+												</div>
+											</li><!-- #comment-## -->
+										</ul>
+									</div><!-- #comments -->
+
+									<!-- Review Form
+									============================================= -->
+									<div id="review_form">
+										<div id="respond" class="comment-respond">
+											<h3 id="reply-title" class="comment-reply-title">Add a review</h3>
+											<form action="https://staging2.wordtrap.org/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate="">
+												<div class="comment-form-rating mb-3">
+													<label class="form-label" for="rating">Your rating</label>
+													<div class="stars">
+														<a class="star-1" href="#"><i class="far fa-star"></i></a>
+														<a class="star-2" href="#"><i class="far fa-star"></i></a>
+														<a class="star-3" href="#"><i class="far fa-star"></i></a>
+														<a class="star-4" href="#"><i class="far fa-star"></i></a>
+														<a class="star-5" href="#"><i class="far fa-star"></i></a>
+													</div>
+												</div>
+												<div class="mb-3">
+													<label class="form-label" for="reply_msg">Your review</label>
+													<div class="required-field">
+														<textarea maxlength="5000" rows="8" class="form-control" name="message" id="reply_msg" required=""></textarea>
+													</div>
+												</div>
+												<div>
+													<input type="submit" value="Submit" class="btn btn-primary text-uppercase" data-loading-text="Loading...">
+												</div>
+											</form>
+										</div>
+									</div><!-- #review_form -->
+								</div>
+							</div><!-- #reviews -->
+						</div>
+
+					</div><!-- .container -->
+
+				</div><!-- .product-more-info -->
+
+				<!-- More Featured Products
+				============================================= -->
+				<div id="more-featured-products" class="section">
+
+					<div class="container">
+
+						<div class="row">
+							<div class="col-lg-5 mb-0 order-lg-1 order-2 pt-lg-0 pt-5">
+
+								<div class="product mt-5">
+									<div class="product-image">
+										<a href="#">
+											<img src="./images/shop/top_product1.png" alt="Top Image" class="img-fluid">
+										</a>
+									</div>
+								</div>
+
+							</div>
+							<div class="col-lg-6 offset-lg-1 order-lg-2 pt-5 pt-lg-0">
+
+								<div class="heading-block mb-2 text-lg-start">
+									<h2 class="title ">Top <span class="fw-normal">rated</span></h2>
+								</div>
+
+								<div class="row pt-3">
+									<div class="col-6">
+
+										<div class="product mb-0">
+											<div class="product-image">
+												<a href="#">
+													<img src="./images/shop/top_product2.png" alt="Top Image" class="img-fluid">
+												</a>
+											</div>
+											<div class="product-details">
+												<div class="product-rating">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star empty"></i>
+													<i class="fas fa-star empty"></i>
+												</div>
+												<a href="#"><h4 class="product-title">Causal Crossbody Bags</h4></a>
+												<div class="product-categories"><a href="#">michael kors</a></div>
+												<div class="product-price">$79<small>.00</small></div>
+											</div>
+										</div>
+
+									</div>
+									<div class="col-6">
+
+										<div class="product mb-0 text-center">
+											<div class="product-image">
+												<a href="#">
+													<img src="./images/shop/top_product3.png" alt="Top Image" class="img-fluid">
+												</a>
+											</div>
+											<div class="product-details">
+												<div class="product-rating">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+												</div>
+												<a href="#"><h4 class="product-title">Causal Crossbody Bags</h4></a>
+												<div class="product-categories"><a href="#">michael kors</a> </div>
+												<div class="product-price"><del>$699.00</del>$79<small>.00</small></div>
+											</div>
+											<div class="ontop">Top</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div><!-- #more-featured-products -->
+
+				<!-- Best Products
+				============================================= -->
+				<div id="best-products" class="section pt-0">
+
+					<div class="container">
+
+						<div class="row">
+							<div class="col-lg-6">
+
+								<div class="heading-block mb-2 text-lg-start text-center">
+									<h2 class="title">Best <span class="fw-normal">selling</span></h2>
+								</div>
+
+								<div class="row pt-5">
+									<div class="col-6">
+
+										<div class="product mb-0 text-center">
+											<div class="product-image">
+												<a href="#">
+													<img src="./images/shop/best_sell1.png" alt="Product Image" class="img-fluid">
+												</a>
+											</div>
+											<div class="product-details">
+												<div class="product-rating">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star empty"></i>
+												</div>
+												<a href="#"><h4 class="product-title">Causal Crossbody Bags</h4></a>
+												<div class="product-categories"><a href="#">michael kors</a></div>
+												<div class="product-price">$79<small>.00</small></div>
+											</div>
+										</div>
+
+									</div>
+									<div class="col-6">
+
+										<div class="product">
+											<div class="product-image">
+												<a href="#">
+													<img src="./images/shop/best_sell2.png" alt="Product Image" class="img-fluid">
+												</a>
+												<div class="onbest">Best</div>
+											</div>
+											<div class="product-details">
+												<div class="product-rating">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star empty"></i>
+												</div>
+												<a href="#"><h4 class="product-title">Causal Crossbody Bags</h4></a>
+												<div class="product-categories"><a href="#">michael kors</a></div>
+												<div class="product-price"><del>$699.00</del>$79<small>.00</small></div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-5 offset-lg-1 product mt-5 mb-0">
+
+								<div class="product">
+									<div class="product-image">
+										<a href="#">
+											<img src="./images/shop/best_sell3.png" alt="Best Image" class="img-fluid">
+										</a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+
+				</div><!-- #best-products -->
+
+				<!-- Category
+				============================================= -->
+				<div id="product-categories" class="section pt-0">
+
+					<div class="container">
+
+						<div class="row">
+							<div class="col-xl-6">
+
+								<div class="category">
+									<div class="category-image">
+										<img src="./images/shop/category1.png" alt="Category Image" class="img-fluid">
+									</div>
+									<div class="category-details">
+										<h4 class="mb-2">BAGS</h4>
+										<h2 class="mb-3">Woman<br> <span class="fw-normal">Collection</span> </h2>
+										<h4 class="mb-3 fw-normal lh-sm">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit</h4>
+										<button class="btn btn-lg fw-bold text-uppercase mt-2">shop now</button>
+									</div>
+								</div>
+
+							</div>
+							<div class="col-xl-6 py-5 py-xl-0">
+
+								<div class="category">
+									<div class="category-image">
+										<img src="./images/shop/category2.png" alt="Category Image" class="img-fluid">
+									</div>
+									<div class="category-details">
+										<h4 class="mb-2">BAGS</h4>
+										<h2 class="mb-3">Man<br> <span class="fw-normal">Collection</span> </h2>
+										<h4 class="mb-3 fw-normal lh-sm">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit</h4>
+										<button class="btn btn-lg fw-bold text-uppercase mt-2">shop now</button>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+
+				</div><!-- #product-categories -->
+
+			</div><!-- .page-content -->
+
+		</main><!-- #content -->
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer">
+
+			<!-- Footer Top
+			============================================= -->
+			<div id="footer-top">
+
+				<!-- Features
+				============================================= -->
+				<section id="features" class="fboxs">
+
+					<div class="container">
+
+						<div class="row service text-center">
+							<div class="col-md-4">
+
+								<div class="fbox">
+									<div class="fbox-icon">
+										<img src="images/feature_box/fbox_icon1.png" alt="Icon Image">
+									</div>
+									<div class="fbox-header">
+										<h5 class="mb-2"> Free Shipping on orders above 99$</h5>
+										<p>Lorem ipsum dolor sit amet</p>
+									</div>
+								</div>
+
+							</div>
+							<div class="col-md-4">
+
+								<div class="fbox">
+									<div class="fbox-icon">
+										<img src="images/feature_box/fbox_icon2.png" alt="Icon Image">
+									</div>
+									<div class="fbox-header">
+										<h5 class="mb-2">Gifts for regular customers</h5>
+										<p>Lorem ipsum dolor sit amet</p>
+									</div>
+								</div>
+
+							</div>
+							<div class="col-md-4">
+
+								<div class="fbox">
+									<div class="fbox-icon">
+										<img src="images/feature_box/fbox_icon3.png" alt="Icon Image">
+									</div>
+									<div class="fbox-header">
+										<h5 class="mb-2">100% money back guarantee</h5>
+										<p>Lorem ipsum dolor sit amet</p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+
+				</section><!-- #features -->
+
+			</div><!-- #footer-top -->
+
+			<!-- Footer Main
+			============================================= -->
+			<div id="footer-main">
+
+				<div class="container">
+
+					<div class="row">
+						<div class="col-md-4 col-xl-3">
+
+							<div class="widget widget-custom-html text-center text-md-start">
+								<div class="widget-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<ul class="text-white list-group">
+										<li><a href="#" target="_blank" title="phone"><span><i class="fas fa-map-marker-alt"></i></span>New York 5686 Edverano Center</a></li>
+										<li><a href="callto:1234567890" target="_blank" title="phone"><span><i class="fas fa-phone-alt"></i></span><strong class="fs-4">123-456-7890</strong></a></li>
+										<li><a href="mailto:info@gmail.com" target="_blank" title="phone"><span><i class="far fa-envelope"></i></span>info@gmail.com</a></li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-md-4 col-xl-2 offset-xl-1">
+
+							<div class="widget widget-links text-center text-md-start">
+								<h5 class="text-uppercase text-white widget-title">customer</h5>
+								<div class="wiget-content">
+									<ul>
+										<li><a href="#">How to make an order</a></li>
+										<li><a href="#">Ways of payment</a></li>
+										<li><a href="#">Delivery</a></li>
+										<li><a href="#">Purcase return</a></li>
+										<li><a href="#">Refunds</a></li>
+										<li><a href="#">Sale rules</a></li>
+										<li><a href="#">Terms of use of the trading platfom</a></li>
+										<li><a href="#">Questions and anwsers</a></li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-md-4 col-xl-2 offset-xl-1">
+
+							<div class="widget widget-links text-center text-md-start">
+								<h5 class="widget-title text-uppercase text-white">for partners</h5>
+								<div class="widget-content">
+									<ul>
+										<li><a href="#">For sellers</a></li>
+										<li><a href="#">For carriers</a></li>
+										<li><a href="#">Franchise</a></li>
+										<li><a href="#">Open the pick-up point</a></li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-xl-3">
+
+							<div class="widget widget-subscribe mt-5 mt-xl-0">
+								<h4 class="widget-title text-white text-uppercase text-center text-xl-end">Subscribe to our the free newslettr</h4>
+								<div class="widget-content">
+									<form id="subscribe-form" action="#" method="post">
+										<div class="input-group">
+											<input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control rounded-pill required email" placeholder="E-mail">
+											<div class="input-group-append">
+												<button class="btn btn-primary rounded-pill text-uppercase" type="submit">Subscribe</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+
+							<div class="widget widget-social text-center text-xl-end">
+								<h4 class="widget-title text-white text-uppercase">Follow Us</h4>
+								<div class="widget-content">
+									<ul class="social-icons d-flex align-items-center justify-content-center justify-content-xl-end">
+										<li><a href="#" target="_blank" title="Facebook"><i class="fab fa-instagram"></i></a></li>
+										<li><a href="#" target="_blank" title="Twitter"><i class="fab fa-facebook-f"></i></a></li>
+										<li><a href="#" target="_blank" title="Linkedin"><i class="fab fa-telegram-plane"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #footer-main -->
+
+			<!-- Footer bottom
+			============================================= -->
+			<div id="footer-bottom">
+
+				<div class="container">
+
+					<div class="d-flex align-items-center justify-content-between py-3">
+
+						<p id="copyrights" class="text-center mb-0">&copy; Copyrights 2023</p>
+
+						<div class="widget widget-payment mb-0">
+							<div class="widget-content">
+								<div class="payments d-flex justify-content-center">
+								<span class="payment-icon paypal"></span>
+								<span class="payment-icon mastercard"></span>
+								<span class="payment-icon visa"></span>
+								<span class="payment-icon express"></span>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</footer><!-- #footer -->
+
+	</div>
+
+	<!-- External JavaScripts
+	============================================= -->
+
+	<!-- jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<!-- Bootstrap Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+	<!-- Bootstrap Slider JS -->
+	<script src="vendors/bootstrap-slider/bootstrap-slider.min.js"></script>
+
+	<!-- Theme JS -->
+	<script src="js/main.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+
+</body>
+</html>
